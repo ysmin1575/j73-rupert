@@ -27,7 +27,6 @@ keywords:
 date-released: "2026-10-28"
 repository-code: "https://github.com/ysmin1575/j73-rupert"
 url: "https://github.com/ysmin1575/j73-rupert"
-# AUTHOR-CONFIRM: insert the software v0.1.0 DOI after Zenodo has issued it.
-# doi: "10.5281/zenodo.SOFTWARE_VERSION_ID"
+doi: "10.5281/zenodo.23724948"
 # Keep the paper DOI and software concept DOI in README metadata;
 # neither replaces this software version's DOI.

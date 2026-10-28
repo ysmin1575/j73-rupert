@@ -12,15 +12,16 @@ Stop if a command fails. The first build may download public TeX
 resources. A local cache can be used with `--only-cached`. Typesetting is
 separate from mathematical verification. The publication date (28 October
 2026), repository URL (https://github.com/ysmin1575/j73-rupert), and AI-use
-responsibility sentence are already filled in. Only the software version
-DOI, software concept DOI, and paper DOI remain visible AUTHOR-CONFIRM
-items until Zenodo issues them.
+responsibility sentence are filled in. The software version DOI is
+https://doi.org/10.5281/zenodo.23724948 (v0.1.0), the concept DOI is
+https://doi.org/10.5281/zenodo.23724947, and the preprint DOI is
+https://doi.org/10.5281/zenodo.23725007 (reserved, unpublished).
 
 After any intentional source or PDF edit:
 
 1. Rebuild the PDF with Tectonic and inspect an image of every page for
    clipping, overlap, missing glyphs, readable equations and tables, and
-   visible AUTHOR-CONFIRM items that remain unresolved.
+   the final DOI links.
 2. Update `data/pdf-metadata.json` with the actual PDF byte size, page
    count, PDF SHA-256, and SHA-256 of every recorded TeX source. Add a new
    visual-check record with its actual time, PDF digest, pages inspected
@@ -53,3 +54,14 @@ The original frozen production counters and `summary.json` bytes must
 remain unchanged. Later production state must not be read to refresh this
 release snapshot. A PDF visual check is not an assertion that the author
 reviewed the manuscript.
+
+## 저자의 다음 작업
+
+DOI를 반영한 파일을 기존 저장소의 main에 새 commit으로 올립니다.
+기존 v0.1.0 태그와 Zenodo 소프트웨어 기록 23724948은 그대로 유지합니다.
+소프트웨어 아카이브의 PDF에는 DOI 자리표시자가 있고, 별도 프리프린트
+PDF에는 DOI가 들어 있습니다. 두 PDF는 서로 다른 파일입니다.
+
+최종 paper.pdf를 기존 Zenodo 논문 초안 23725007에 업로드합니다.
+업로드한 파일을 내려받아 로컬 최종본과 bytes 및 SHA-256이 같은지
+확인한 다음 Publish로 발행합니다. 초안을 새로 만들거나 예약 DOI를 바꾸지 않습니다.

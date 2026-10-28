@@ -281,7 +281,7 @@ or checker predicates to make a failed test pass.
 From that verified Git checkout, build the deterministic archive outside it:
 
 ```powershell
-python -X utf8 -B build_release.py ..\j73-rupert-v0.1.0.zip
+python -X utf8 -B build_release.py ..\j73-rupert-main-doi.zip
 ```
 
 The builder checks every hash and requires an exact match to the Git-tracked
@@ -289,18 +289,20 @@ file list. Ignored virtual environments, PDF logs and page images are excluded.
 
 ## Citation, licences and confirmation
 
-Software version DOI: [AUTHOR-CONFIRM: version-specific software DOI]
+Software version DOI: https://doi.org/10.5281/zenodo.23724948
 
-Software concept DOI: [AUTHOR-CONFIRM: software concept DOI]
+Software concept DOI: https://doi.org/10.5281/zenodo.23724947
 
-Paper DOI: [AUTHOR-CONFIRM: separate preprint DOI]
+Paper DOI: https://doi.org/10.5281/zenodo.23725007
 
-Use the software version-specific DOI when it has been issued, and cite
-the paper separately. `CITATION.cff` describes software version 0.1.0.
+Use the software version-specific DOI for v0.1.0, and cite
+the paper separately. The paper is a separate Zenodo preprint with the paper DOI above. `CITATION.cff` describes software version 0.1.0.
 The publication date is 28 October 2026, and the repository URL is
 https://github.com/ysmin1575/j73-rupert. The article is labelled
-`Interim report, version 0.1`. Only the three DOI fields above remain
-visible AUTHOR-CONFIRM items; they are filled after Zenodo issues them.
+`Interim report, version 0.1`. The DOI update moves main to a new commit;
+the v0.1.0 tag and its Zenodo software record remain unchanged. The software
+archive PDF contains DOI placeholders; the separate preprint PDF contains
+the DOIs. These are different files.
 
 Code is MIT licensed. The paper text and data are CC BY 4.0. Retain
 `LICENSE`, `LICENSE-CC-BY-4.0.txt`, `LICENSES.md` and the upstream notices.

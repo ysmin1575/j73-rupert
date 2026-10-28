@@ -1,12 +1,12 @@
 {
-  "bytes": 195536,
+  "bytes": 193149,
   "pages": 19,
-  "sha256": "4ef54eea02debf377f9e3b9b9817e2fae7d521eafca9c12cd04ce06c5d482d21",
+  "sha256": "b838d85ad9861d0b420eb10e0c4daed2733448030c5134db77c1e124ef9f0a67",
   "source_sha256": {
     "figures/hidden.tex": "b2c95aaf94cbea7eba706c9e428a6fe474ad323927ec2daaab8ab64191fdc24e",
     "figures/proof-map.tex": "ae37d3306b41470e4b7bb2757bcdf21aad06a670973a0b61ede8eb681f72b7ad",
     "frontier.tex": "7737d6add6f9d3e9f4909a8dddf0ab0c8688a47a5f15ed4690a91f37aa27d705",
-    "paper.tex": "73668b652b3b31248942dc60d33dcfb4c37825a3cdb07be43d19573256297849",
+    "paper.tex": "0b5c1f767faf73f9cfc9927322fbdf1bfd3b391a20fa86dc69c86ffb78570688",
     "references.tex": "ab3e3c52f8b247dc4387de78f5912a417a6ec44afdb20b86959d6d6a8f4719ca",
     "snapshot.tex": "db67c6d0bb10615e22a7d924b9cf9ea3eb47859df097acdda6fa163ac10c95e8"
   },
@@ -78,16 +78,63 @@
         "completed_utc": "2026-10-27T03:57:42.862314+00:00",
         "observations": "Every rendered page was inspected individually. Equations, tables, figures, references, DOI placeholders and the complete AI paragraph are legible; no clipping, overlap or missing glyphs was found. The retained AUTHOR-CONFIRM markers remain visible."
       }
+    },
+    {
+      "pdf_sha256": "4ef54eea02debf377f9e3b9b9817e2fae7d521eafca9c12cd04ce06c5d482d21",
+      "source_sha256": {
+        "figures/hidden.tex": "b2c95aaf94cbea7eba706c9e428a6fe474ad323927ec2daaab8ab64191fdc24e",
+        "figures/proof-map.tex": "ae37d3306b41470e4b7bb2757bcdf21aad06a670973a0b61ede8eb681f72b7ad",
+        "frontier.tex": "7737d6add6f9d3e9f4909a8dddf0ab0c8688a47a5f15ed4690a91f37aa27d705",
+        "paper.tex": "73668b652b3b31248942dc60d33dcfb4c37825a3cdb07be43d19573256297849",
+        "references.tex": "ab3e3c52f8b247dc4387de78f5912a417a6ec44afdb20b86959d6d6a8f4719ca",
+        "snapshot.tex": "db67c6d0bb10615e22a7d924b9cf9ea3eb47859df097acdda6fa163ac10c95e8"
+      },
+      "record": {
+        "status": "PASS",
+        "pdf_sha256": "4ef54eea02debf377f9e3b9b9817e2fae7d521eafca9c12cd04ce06c5d482d21",
+        "source_sha256": {
+          "figures/hidden.tex": "b2c95aaf94cbea7eba706c9e428a6fe474ad323927ec2daaab8ab64191fdc24e",
+          "figures/proof-map.tex": "ae37d3306b41470e4b7bb2757bcdf21aad06a670973a0b61ede8eb681f72b7ad",
+          "frontier.tex": "7737d6add6f9d3e9f4909a8dddf0ab0c8688a47a5f15ed4690a91f37aa27d705",
+          "paper.tex": "73668b652b3b31248942dc60d33dcfb4c37825a3cdb07be43d19573256297849",
+          "references.tex": "ab3e3c52f8b247dc4387de78f5912a417a6ec44afdb20b86959d6d6a8f4719ca",
+          "snapshot.tex": "db67c6d0bb10615e22a7d924b9cf9ea3eb47859df097acdda6fa163ac10c95e8"
+        },
+        "pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "performed_by": "release-preparation agent",
+        "completed_utc": "2026-10-27T15:17:32.087638+00:00",
+        "observations": "Every newly rendered page image (1-19) was inspected individually. The title-page date reads 28 October 2026; the repository URL, remaining DOI markers, frozen tables, equations, figures, references and complete AI-use paragraph are legible. The exact responsibility sentence and unfinished certificate-chain verification clause are present. No clipping, overlap or missing glyphs was found. This records an agent visual check only."
+      }
     }
   ],
   "visual_review": {
     "status": "PASS",
-    "pdf_sha256": "4ef54eea02debf377f9e3b9b9817e2fae7d521eafca9c12cd04ce06c5d482d21",
+    "pdf_sha256": "b838d85ad9861d0b420eb10e0c4daed2733448030c5134db77c1e124ef9f0a67",
     "source_sha256": {
       "figures/hidden.tex": "b2c95aaf94cbea7eba706c9e428a6fe474ad323927ec2daaab8ab64191fdc24e",
       "figures/proof-map.tex": "ae37d3306b41470e4b7bb2757bcdf21aad06a670973a0b61ede8eb681f72b7ad",
       "frontier.tex": "7737d6add6f9d3e9f4909a8dddf0ab0c8688a47a5f15ed4690a91f37aa27d705",
-      "paper.tex": "73668b652b3b31248942dc60d33dcfb4c37825a3cdb07be43d19573256297849",
+      "paper.tex": "0b5c1f767faf73f9cfc9927322fbdf1bfd3b391a20fa86dc69c86ffb78570688",
       "references.tex": "ab3e3c52f8b247dc4387de78f5912a417a6ec44afdb20b86959d6d6a8f4719ca",
       "snapshot.tex": "db67c6d0bb10615e22a7d924b9cf9ea3eb47859df097acdda6fa163ac10c95e8"
     },
@@ -112,8 +159,8 @@
       18,
       19
     ],
-    "performed_by": "release-preparation agent",
-    "completed_utc": "2026-10-27T15:17:32.087638+00:00",
-    "observations": "Every newly rendered page image (1-19) was inspected individually. The title-page date reads 28 October 2026; the repository URL, remaining DOI markers, frozen tables, equations, figures, references and complete AI-use paragraph are legible. The exact responsibility sentence and unfinished certificate-chain verification clause are present. No clipping, overlap or missing glyphs was found. This records an agent visual check only."
+    "performed_by": "Sol, release-preparation agent",
+    "completed_utc": "2026-10-28T08:55:07.087734+00:00",
+    "observations": "Each final rendered page image (1-19) was inspected individually. The title-page date, frozen status tables, equations, figures and references are legible. Page 17 displays software DOI 10.5281/zenodo.23724948 (v0.1.0) and preprint DOI 10.5281/zenodo.23725007. Page 18 has the responsibility sentence and unfinished certificate-chain clause, and no longer says that the DOI fields remain open. No clipping, overlap or missing glyphs was found. This is an agent visual review only."
   }
 }
