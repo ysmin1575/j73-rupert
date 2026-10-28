@@ -1,0 +1,83 @@
+{
+  "scope": "The files list contains only shipped historical diagnostic files; omitted_source_files records original private bytes, not required repository paths.",
+  "files": [
+    {
+      "path": "../historical-diagnosis/census_summary.json",
+      "bytes": 25070,
+      "sha256": "63a9eb8084161c7dad33466d0ea512b87e8e551876d1155beb77619afb9ea967"
+    },
+    {
+      "path": "../historical-diagnosis/final_metrics.json",
+      "bytes": 23324,
+      "sha256": "c709379d930acf66db8f1b8d5c33777ee109ae2e8aeecfe8fdbbedc6d64740cc"
+    },
+    {
+      "path": "../historical-diagnosis/findings_verification.json",
+      "bytes": 2843,
+      "sha256": "cda3d55f7e1fd3087090bd308927bcfa9ec6ba0a3d1864fe7956ebaad6e6eae8"
+    },
+    {
+      "path": "../historical-diagnosis/README.md",
+      "bytes": 2581,
+      "sha256": "cb8664ed0ea2f1f07ec0a69d5496835a235ad55d2ba0faa3bf4c7ec3d6606dc6"
+    },
+    {
+      "path": "../historical-diagnosis/witness_summary.json",
+      "bytes": 53141,
+      "sha256": "b50f3b7b189763567eb915b38ebe1efeaee078bd30c6100d9c7e2082a6c07d6b"
+    }
+  ],
+  "omitted_source_files": [
+    {
+      "bytes": 25050,
+      "sha256": "9774e985c5ebcd1ab880f08995329432fcef627b5555a43af3637fbd8b1cea34",
+      "source_id": "src-9774e985c5ebcd1a",
+      "basename": "astra-round8-proposal.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed",
+      "distributed": false,
+      "reason": "Internal research report; replaced by the dated public historical summary."
+    },
+    {
+      "bytes": 24888,
+      "sha256": "704f7c61f9d4df7dcdeff9c1263987a301642f3eb0becb96e1663e1caf37b656",
+      "source_id": "src-704f7c61f9d4df7d",
+      "basename": "astra-task64-review.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed",
+      "distributed": false,
+      "reason": "Internal research report; replaced by the dated public historical summary."
+    },
+    {
+      "bytes": 26003,
+      "sha256": "9be11ba7ca978460068a9fbe3769c4f2cf1b6d1a3da7638f08fcedf4b2ed5e8e",
+      "source_id": "src-9be11ba7ca978460",
+      "basename": "sol-round8-proposal.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed",
+      "distributed": false,
+      "reason": "Internal research report; replaced by the dated public historical summary."
+    },
+    {
+      "bytes": 10987,
+      "sha256": "85d11f51cf7047b11fc03f22583d2231b4aab3da57983faafe94bb39f62c5e94",
+      "source_id": "src-85d11f51cf7047b1",
+      "basename": "sol-task63-report.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed",
+      "distributed": false,
+      "reason": "Internal research report; replaced by the dated public historical summary."
+    },
+    {
+      "filename": "lambda1_witnesses.jsonl.gz",
+      "bytes": 3304005,
+      "sha256": "381e7f19af08480a446ab880e00ffb17c164bece50432d957a797b40c02610a4",
+      "distributed": false,
+      "reason": "Historical equality-witness payloads use a format not supported by the released exclusion checker. Dated summaries and original hashes are retained; no new exhaustive equality replay is claimed.",
+      "source_id": "src-381e7f19af08480a",
+      "basename": "lambda1_witnesses.jsonl.gz",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    }
+  ]
+}

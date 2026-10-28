@@ -1,0 +1,23 @@
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[>=Stealth,font=\small,
+ box/.style={draw,rounded corners=1pt,align=center,text width=3.8cm,minimum height=.95cm}]
+ \node[box] (input) {Exact J73 input\\and symmetry reduction};
+ \node[box,right=1cm of input] (root) {COVER: closed roots\\and replacement trees};
+ \node[box,below=1cm of input] (local) {G, SC, or tube rule\\and exact witness};
+ \node[box,right=1cm of local] (member) {Whole-box membership\\in certified region};
+ \node[box,below=1cm of member] (replay) {Full-chain replay\\all arithmetic and links};
+ \node[box,left=1cm of replay,dashed] (gate) {Conditional conclusion\\completion still pending};
+ \draw[->] (input)--(root);
+ \draw[->] (input)--(local);
+ \draw[->] (root)--(member);
+ \draw[->] (local)--(member);
+ \draw[->] (member)--(replay);
+ \draw[->] (root.east)--++(.4,0)|-(replay.east);
+ \draw[->] (replay)--(gate);
+\end{tikzpicture}
+\caption{The proof obligations and the four certificate categories. Local
+acceptance includes whole-box membership. Full-chain replay and the
+dashed conditional conclusion remain unfinished.}
+\label{fig:proofmap}
+\end{figure}

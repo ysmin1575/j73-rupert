@@ -1,0 +1,92 @@
+\subsection{Frozen production status}
+The release snapshot was captured on 27 October 2026,
+10:40:50.233026--10:41:21.245658 KST, without interrupting production.
+Each root's committed logical proof was read through the compact-storage
+API with read-only database connections. This is a rolling capture of
+individual committed versions, not an atomic filesystem snapshot. The
+coordinator counts and state were unchanged across capture, although its
+progress heartbeat changed. The snapshot's per-root times and logical
+SHA-256 digests are retained in \file{data/status-snapshot/}.
+
+\begin{table}[ht]
+\centering\small
+\caption{Production counters in the frozen release snapshot. These are
+not exhaustive independent verification results.}
+\label{tab:counts}
+\begin{tabular}{@{}p{.65\textwidth}r@{}}
+\toprule
+Quantity & Count\\
+\midrule
+Staged input jobs & 2,057\\
+Closed staged jobs & 453\\
+Open staged jobs & 1,604\\
+Pending boxes in captured open proofs & 397,906\\
+Closed receipts without a tube operation & 409\\
+Closed receipts containing a tube operation & 44\\
+Closed before coordinator stage 2 & 392\\
+Additional closures by capture & 61\\
+Coordinator stage-2 visits recorded & 136 / 1,665\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Here ``closed'' means closed in the production records. A tube-assisted
+job contains at least one tube operation and may also contain $G$, $SC$,
+or $COVER$ steps; these counts have not been verified by a full-chain
+replay.
+
+The recorded proof budget and the time at which a job closed are different
+stage notions. Grouping the captured proofs by their recorded budget
+gives 431 closed and 1,523 open at stage 1, and 22 closed and 81 open at
+stage 2. The stage-1 closed receipts comprise 392 without and 39 with a
+tube operation; stage 2 comprises 17 without and 5 with a tube operation.
+Tube-only visits can retain an earlier budget, so these figures are not a
+second chronology of stage closures. Likewise the coordinator's
+136 visits are not 136 closures.
+
+The exact summary bytes are identified by SHA-256
+\begin{center}\small
+\path{145d4f6cd74f64b01a0166dbc548a0121f92c87c45a29fbacfd814116c10dbf3}.
+\end{center}
+The manifest also binds the open-job list, compressed per-job status,
+public capture records, source evidence, logical proof-version hashes,
+and selected-certificate provenance. The raw controller record is not
+distributed; the summary retains its original capture digest as
+provenance. Production continues after this capture; later counters are
+not substituted into this version.
+
+\subsection{From the original grid to the staged jobs}
+The original grid contains 1,248,480 angle roots. Its first traversal
+reported 1,247,167 closed roots and 1,313 roots with 67,011 unresolved
+descendant leaves. These are different units. A subsequent traversal
+processed 32,420 leaf tasks and left 34,591 unprocessed. Subdivision of
+the processed tasks produced 1,133,950 unresolved leaves, so the switched
+queue had $1,133,950+34,591=1,168,541$ inputs. Its later unresolved-output
+counts were
+\[
+\begin{split}
+1,168,541&\longrightarrow244,200\longrightarrow36,895
+\longrightarrow32,332\\
+&\longrightarrow22,053\longrightarrow4,759
+\longrightarrow4,105\longrightarrow3,524.
+\end{split}
+\]
+These transitions replace unresolved output populations rather than
+counts of original roots. In the transition from 32,332 inputs, 19,666
+input jobs closed, leaving 12,666 input jobs whose unresolved descendants
+numbered 22,053. Thus subtracting closed inputs does not give the
+output-leaf count.
+
+The later static ledgers partition those 3,524 residual jobs as follows:
+\[
+\begin{split}
+3,524-15-25-1,401&=2,083,\\
+2,083-1&=2,082,\\
+2,082-4-21&=2,057.
+\end{split}
+\]
+The first three reductions remove 15, 25, and 1,401 jobs. A separately
+recorded closure of job 2411 leaves 2,082; removing another 4 and 21 jobs
+gives the staged population of 2,057. The accompanying accounting table
+identifies these disjoint sets. This checks the ledger, not the underlying
+certificates.

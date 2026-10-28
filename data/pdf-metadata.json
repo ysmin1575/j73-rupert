@@ -1,0 +1,119 @@
+{
+  "bytes": 195536,
+  "pages": 19,
+  "sha256": "4ef54eea02debf377f9e3b9b9817e2fae7d521eafca9c12cd04ce06c5d482d21",
+  "source_sha256": {
+    "figures/hidden.tex": "b2c95aaf94cbea7eba706c9e428a6fe474ad323927ec2daaab8ab64191fdc24e",
+    "figures/proof-map.tex": "ae37d3306b41470e4b7bb2757bcdf21aad06a670973a0b61ede8eb681f72b7ad",
+    "frontier.tex": "7737d6add6f9d3e9f4909a8dddf0ab0c8688a47a5f15ed4690a91f37aa27d705",
+    "paper.tex": "73668b652b3b31248942dc60d33dcfb4c37825a3cdb07be43d19573256297849",
+    "references.tex": "ab3e3c52f8b247dc4387de78f5912a417a6ec44afdb20b86959d6d6a8f4719ca",
+    "snapshot.tex": "db67c6d0bb10615e22a7d924b9cf9ea3eb47859df097acdda6fa163ac10c95e8"
+  },
+  "visual_review_history": [
+    {
+      "pdf_sha256": "1f6ee2f60f311b44691739f1f914d2e80ad4b218853c6c09a266f63a1da49dcb",
+      "source_sha256": {
+        "frontier.tex": "92401c4e8377eff4a1e7d5f025f3e6e83b1c082a37a7fe47b384c263cba61464",
+        "paper.tex": "a2dbf9a28453ac8b6e8b98eab247b0075406e4bf6eed3ee8827c646b8ba909eb",
+        "references.tex": "ad582d966146cfdd74e4bbf5fe0f0393684269d3b5a858934e096f807349c0ed",
+        "snapshot.tex": "3cde6d9e24ae57a35aaf2ad26e0c8f2ef797fc2852ae88dac85bd2f86ae85b78"
+      },
+      "record": {
+        "status": "PASS",
+        "reviewer": "release-preparation agent; no author review is asserted",
+        "completed_utc": "2026-10-27T02:16:24.599677+00:00",
+        "pages_inspected": [
+          1,
+          14,
+          18
+        ],
+        "contact_sheet_pages": 20,
+        "observations": "Title and AUTHOR-CONFIRM date, compact status table, production-count table, and complete AI paragraph are legible; no clipping, overlap or missing glyphs found. The contact sheet shows consistent page layout."
+      }
+    },
+    {
+      "pdf_sha256": "f49f7fba5d77a38a1a66ed4142d88561fabd9ff54af0686ea10c1dd28f2b9ca4",
+      "source_sha256": {
+        "figures/hidden.tex": "b2c95aaf94cbea7eba706c9e428a6fe474ad323927ec2daaab8ab64191fdc24e",
+        "figures/proof-map.tex": "ae37d3306b41470e4b7bb2757bcdf21aad06a670973a0b61ede8eb681f72b7ad",
+        "frontier.tex": "7737d6add6f9d3e9f4909a8dddf0ab0c8688a47a5f15ed4690a91f37aa27d705",
+        "paper.tex": "f8b61683931ab917945e8a6ae9abd15687283bb4977af9e01375c4dc49a9d610",
+        "references.tex": "ab3e3c52f8b247dc4387de78f5912a417a6ec44afdb20b86959d6d6a8f4719ca",
+        "snapshot.tex": "db67c6d0bb10615e22a7d924b9cf9ea3eb47859df097acdda6fa163ac10c95e8"
+      },
+      "record": {
+        "status": "PASS",
+        "pdf_sha256": "f49f7fba5d77a38a1a66ed4142d88561fabd9ff54af0686ea10c1dd28f2b9ca4",
+        "source_sha256": {
+          "figures/hidden.tex": "b2c95aaf94cbea7eba706c9e428a6fe474ad323927ec2daaab8ab64191fdc24e",
+          "figures/proof-map.tex": "ae37d3306b41470e4b7bb2757bcdf21aad06a670973a0b61ede8eb681f72b7ad",
+          "frontier.tex": "7737d6add6f9d3e9f4909a8dddf0ab0c8688a47a5f15ed4690a91f37aa27d705",
+          "paper.tex": "f8b61683931ab917945e8a6ae9abd15687283bb4977af9e01375c4dc49a9d610",
+          "references.tex": "ab3e3c52f8b247dc4387de78f5912a417a6ec44afdb20b86959d6d6a8f4719ca",
+          "snapshot.tex": "db67c6d0bb10615e22a7d924b9cf9ea3eb47859df097acdda6fa163ac10c95e8"
+        },
+        "pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "performed_by": "release verification",
+        "completed_utc": "2026-10-27T03:57:42.862314+00:00",
+        "observations": "Every rendered page was inspected individually. Equations, tables, figures, references, DOI placeholders and the complete AI paragraph are legible; no clipping, overlap or missing glyphs was found. The retained AUTHOR-CONFIRM markers remain visible."
+      }
+    }
+  ],
+  "visual_review": {
+    "status": "PASS",
+    "pdf_sha256": "4ef54eea02debf377f9e3b9b9817e2fae7d521eafca9c12cd04ce06c5d482d21",
+    "source_sha256": {
+      "figures/hidden.tex": "b2c95aaf94cbea7eba706c9e428a6fe474ad323927ec2daaab8ab64191fdc24e",
+      "figures/proof-map.tex": "ae37d3306b41470e4b7bb2757bcdf21aad06a670973a0b61ede8eb681f72b7ad",
+      "frontier.tex": "7737d6add6f9d3e9f4909a8dddf0ab0c8688a47a5f15ed4690a91f37aa27d705",
+      "paper.tex": "73668b652b3b31248942dc60d33dcfb4c37825a3cdb07be43d19573256297849",
+      "references.tex": "ab3e3c52f8b247dc4387de78f5912a417a6ec44afdb20b86959d6d6a8f4719ca",
+      "snapshot.tex": "db67c6d0bb10615e22a7d924b9cf9ea3eb47859df097acdda6fa163ac10c95e8"
+    },
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "performed_by": "release-preparation agent",
+    "completed_utc": "2026-10-27T15:17:32.087638+00:00",
+    "observations": "Every newly rendered page image (1-19) was inspected individually. The title-page date reads 28 October 2026; the repository URL, remaining DOI markers, frozen tables, equations, figures, references and complete AI-use paragraph are legible. The exact responsibility sentence and unfinished certificate-chain verification clause are present. No clipping, overlap or missing glyphs was found. This records an agent visual check only."
+  }
+}

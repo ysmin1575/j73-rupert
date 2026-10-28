@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "command": "python -X utf8 -B code/discovery/check.py",
+  "elapsed_seconds": 1.4,
+  "scope": "exact discovery identities, including 1440 signs; no complete root or global cover claim",
+  "stdout": "PASS cone: 1440 exact signs = 1404 positive + 36 vector zeros\r\nPASS rotations: order 3, parent 60/60, J73 40/60; orbit 50, labels 400\r\nPASS anchor: four unique supports, positive weights summing to 1, zero torque sum, rank 3\r\nALL CHECKS PASS; single process; elapsed 1.400 s\r\n",
+  "input_sha256": {
+    "code/discovery/check.py": "b1a6c2d9c1bf223c9592b2dd6e1158997df364e278e893fb10d0c64c255d29c9",
+    "code/discovery/evidence.json": "f8c171eda5c6b803bf631c25215ef9fa5b79b02a950d249e30bdd833eaeeca70"
+  }
+}

@@ -1,0 +1,434 @@
+{
+  "scope": "Original source commitments for dated historical evidence; private originals marked not distributed are not repository file paths.",
+  "files": [
+    {
+      "bytes": 15102,
+      "sha256": "14c86cbed8f0f001ec0368d3020b881bbd6cc911c03103476dba74bf6c7e4f8c",
+      "source_id": "src-14c86cbed8f0f001",
+      "basename": "INVENTORY_v2.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 8767,
+      "sha256": "fdc77b2b3dd84f4ca805c35c81bd893672ca8248795d355f922b4202c1b57e00",
+      "source_id": "src-fdc77b2b3dd84f4c",
+      "basename": "MAP_v2.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 3101,
+      "sha256": "ca6e021cfc12af914f58a20306ab108d02565261dbb995d46c73b0bd3439656b",
+      "source_id": "src-ca6e021cfc12af91",
+      "basename": "TCB_v2.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 17631,
+      "sha256": "5fa5bba410176fa39746458114345bdf713459acea096a259561505bc3a7471e",
+      "source_id": "src-5fa5bba410176fa3",
+      "basename": "VERIFY_v2.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 6542,
+      "sha256": "6a6e4f924884e7f605aca9faecd5b960eae8c7d05d6ff0c6dfef3a77f25a6a4f",
+      "source_id": "src-6a6e4f924884e7f6",
+      "basename": "theorem.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 17359,
+      "sha256": "917e39759c5a77058ef3cc53de414f1b03622b6961eec2173808fe6ac597e113",
+      "source_id": "src-917e39759c5a7705",
+      "basename": "containment_static.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 20458,
+      "sha256": "93804dea840580b6f007536a330711366bb8ce6ea7db935bf05442805c3e81e2",
+      "source_id": "src-93804dea840580b6",
+      "basename": "runner_static.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 16700,
+      "sha256": "cbdc118ba294b922c62aa4b674067175b65f34f1ff718b1c3bc58f082f81dfbf",
+      "source_id": "src-cbdc118ba294b922",
+      "basename": "theorem_static.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 14104,
+      "sha256": "08f6cb414d18370ef4dd2c8de767c7f42a71ebd6e7634e6a247049dd6d7e2447",
+      "source_id": "src-08f6cb414d18370e",
+      "basename": "v2_current_static.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 24888,
+      "sha256": "704f7c61f9d4df7dcdeff9c1263987a301642f3eb0becb96e1663e1caf37b656",
+      "source_id": "src-704f7c61f9d4df7d",
+      "basename": "\uac80\ud1a0.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 25070,
+      "sha256": "63a9eb8084161c7dad33466d0ea512b87e8e551876d1155beb77619afb9ea967",
+      "source_id": "src-63a9eb8084161c7d",
+      "basename": "census_summary.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "distributed as historical summary",
+      "distributed_as": "data/historical-diagnosis/census_summary.json"
+    },
+    {
+      "bytes": 23324,
+      "sha256": "c709379d930acf66db8f1b8d5c33777ee109ae2e8aeecfe8fdbbedc6d64740cc",
+      "source_id": "src-c709379d930acf66",
+      "basename": "final_metrics.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "distributed as historical summary",
+      "distributed_as": "data/historical-diagnosis/final_metrics.json"
+    },
+    {
+      "bytes": 2843,
+      "sha256": "cda3d55f7e1fd3087090bd308927bcfa9ec6ba0a3d1864fe7956ebaad6e6eae8",
+      "source_id": "src-cda3d55f7e1fd308",
+      "basename": "findings_verification.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "distributed as historical summary",
+      "distributed_as": "data/historical-diagnosis/findings_verification.json"
+    },
+    {
+      "bytes": 3304005,
+      "sha256": "381e7f19af08480a446ab880e00ffb17c164bece50432d957a797b40c02610a4",
+      "source_id": "src-381e7f19af08480a",
+      "basename": "lambda1_witnesses.jsonl.gz",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 84462,
+      "sha256": "9b342683227fcf375f99f1db41e54be44e1a3c6e73ca454c785f8380ff35ba35",
+      "source_id": "src-9b342683227fcf37",
+      "basename": "new_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 16301,
+      "sha256": "c7d7805fb7dd9e8b1af58873807b4e3ba762899c404510787abfa71342caebf1",
+      "source_id": "src-c7d7805fb7dd9e8b",
+      "basename": "production_notes.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 18026,
+      "sha256": "4c8e9c41e587fe2848418c9535bcca5b6fb44d396f394d53dbc0d68412fc8369",
+      "source_id": "src-4c8e9c41e587fe28",
+      "basename": "restart_review.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 4562,
+      "sha256": "504eb3a83b8389a3fe93baec9411882ebe0c9a9bf8c61acaea1c6f5fe7837c31",
+      "source_id": "src-504eb3a83b8389a3",
+      "basename": "sc_notes.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 11750,
+      "sha256": "15596ae2b75a8037d06d681529922609a5288189d3d67196dbddf5698b1f174e",
+      "source_id": "src-15596ae2b75a8037",
+      "basename": "sc_route.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 12168,
+      "sha256": "723d6cc14619184aee434088dff3a7af795fdd9ae2089342a0c2911acc302555",
+      "source_id": "src-723d6cc14619184a",
+      "basename": "tube_review.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 53141,
+      "sha256": "b50f3b7b189763567eb915b38ebe1efeaee078bd30c6100d9c7e2082a6c07d6b",
+      "source_id": "src-b50f3b7b18976356",
+      "basename": "witness_summary.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "distributed as historical summary",
+      "distributed_as": "data/historical-diagnosis/witness_summary.json"
+    },
+    {
+      "bytes": 25050,
+      "sha256": "9774e985c5ebcd1ab880f08995329432fcef627b5555a43af3637fbd8b1cea34",
+      "source_id": "src-9774e985c5ebcd1a",
+      "basename": "\uc81c\uc548.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 58200,
+      "sha256": "f808e7c8a4c5ff6ad2a4053e32ce406b1aab0fbc6edf865cef1dad2910253d00",
+      "source_id": "src-f808e7c8a4c5ff6a",
+      "basename": "accounting.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 1906144,
+      "sha256": "7084f2dd2e27c67e94a4ef053349215b9a6456d49217c697f78d2c40e3dcd45b",
+      "source_id": "src-7084f2dd2e27c67e",
+      "basename": "closure_ledger.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 13373,
+      "sha256": "56f2a610034fd31015f8648c54ff485ec11ed54d7610a00c19dbee21010b6734",
+      "source_id": "src-56f2a610034fd310",
+      "basename": "historical_import.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 10701778,
+      "sha256": "3fd1fcdc0048618209eba1ae3f4575bb8ac596efa43d8bc707fd4302f8c64bb2",
+      "source_id": "src-3fd1fcdc00486182",
+      "basename": "remaining_after_j42.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 7254,
+      "sha256": "e81b555efe10ef7c28e462e028250aca7d3c03da5f8932719bd73e3a0c69a694",
+      "source_id": "src-e81b555efe10ef7c",
+      "basename": "theorem.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 6248,
+      "sha256": "abf9aee75d6c6b0a85bcefa27fca0b1770eba70a64a17c3afbf76535d37cd7fe",
+      "source_id": "src-abf9aee75d6c6b0a",
+      "basename": "prepare_staged.py",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 127967,
+      "sha256": "e5d758aa8fff1f27fdcdcb80b134e2ffcec2e0d223cafc0048cc9fe8ef6324d1",
+      "source_id": "src-e5d758aa8fff1f27",
+      "basename": "staged_input.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 5831,
+      "sha256": "89c5f7a26ee514d638185eb90569e0138b7fa24e7db889afcc2c59c095a1fd95",
+      "source_id": "src-89c5f7a26ee514d6",
+      "basename": "checker_extension.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 2701912,
+      "sha256": "d8ad3fbef9cfee0f1186f715110c6e8ab9d842d6e2d0395b7f1e1937613ce7fe",
+      "source_id": "src-d8ad3fbef9cfee0f",
+      "basename": "generated_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 9807804,
+      "sha256": "8ecc7bd0c6c1fc49a49804eac16f2922c31fe098b46d7f39829b01b50ffa2009",
+      "source_id": "src-8ecc7bd0c6c1fc49",
+      "basename": "initial_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 1647,
+      "sha256": "c5e2a79bd7471a780ff41f1444ea3c680d495168a153d7e441730916e4e1fc57",
+      "source_id": "src-c5e2a79bd7471a78",
+      "basename": "plan.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 5658013,
+      "sha256": "083086077acc1f50a52960f1e7f2c7f6ac8271d656e42b968ae2829b5a25866e",
+      "source_id": "src-083086077acc1f50",
+      "basename": "runtime_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 10987,
+      "sha256": "85d11f51cf7047b11fc03f22583d2231b4aab3da57983faafe94bb39f62c5e94",
+      "source_id": "src-85d11f51cf7047b1",
+      "basename": "\ubcf4\uace0-\uc791\uc5c563.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 13944,
+      "sha256": "9bfedb039f0e7e0074e08d9ed6b0baa5004dccc7c2bf00af2553afd4833ed787",
+      "source_id": "src-9bfedb039f0e7e00",
+      "basename": "\ubcf4\uace0-\uc791\uc5c566.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 11475,
+      "sha256": "eed351111c554df0c0d3511bc58cf496820b34c05a2fdfafc356552308e84d92",
+      "source_id": "src-eed351111c554df0",
+      "basename": "\ubcf4\uace0-\uc791\uc5c566b.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 10609,
+      "sha256": "663d9f0caaacf59fa683f603991353f6e8eabe87f8fcee52ee863a76ce388c2b",
+      "source_id": "src-663d9f0caaacf59f",
+      "basename": "\ubcf4\uace0-\uc791\uc5c566d.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 8690,
+      "sha256": "aaabd7086eae8816ff4f7d1bf16f605a1e408d8d500bdaee3d6fef742859f6b6",
+      "source_id": "src-aaabd7086eae8816",
+      "basename": "\uc6b4\uc601-\uc801\uc6a9\uc548.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 55701,
+      "sha256": "2aad96c3d6bf816a036d0a398044e99e7c65a878f8dec0f4d4aa088c2cfe325d",
+      "source_id": "src-2aad96c3d6bf816a",
+      "basename": "demand_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 20651,
+      "sha256": "aada4d312b7ea74140ec8a4dd9342b82a5088af25d51b089cc3ffb2ef5918edb",
+      "source_id": "src-aada4d312b7ea741",
+      "basename": "fitted_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 25643,
+      "sha256": "85c4668c3679dd0f5d9576a50fe4fe5296e20bccfa4d716d97142b65d36d4214",
+      "source_id": "src-85c4668c3679dd0f",
+      "basename": "restart_note.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 13231,
+      "sha256": "8eaaf6ca5830b153f6e81fa0e0fd7e6ebc92a90f8a1c72dc6285458803a24f17",
+      "source_id": "src-8eaaf6ca5830b153",
+      "basename": "sc_note.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 13283,
+      "sha256": "8a7e9012407a1f58da3716be6a4bf970e12d0b733a55b4a2ce11456676cc67f6",
+      "source_id": "src-8a7e9012407a1f58",
+      "basename": "theory_note.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 26003,
+      "sha256": "9be11ba7ca978460068a9fbe3769c4f2cf1b6d1a3da7638f08fcedf4b2ed5e8e",
+      "source_id": "src-9be11ba7ca978460",
+      "basename": "\uc81c\uc548.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 2334,
+      "sha256": "85bb08b4f389b371aa202e2db2b526a0edbfbd218fddb944df7ff2b351764d89",
+      "source_id": "src-85bb08b4f389b371",
+      "basename": "\ubcf4\uace0-J42-\ucd5c\uc885\uba54\uc2dc\uc9c0.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 3583,
+      "sha256": "d81e329fca9ee5d2699eec8a4e531da197d415f131a419ea1e796bfd4fe426f7",
+      "source_id": "src-d81e329fca9ee5d2",
+      "basename": "\ubcf4\uace0-J47-\ucd5c\uc885\uba54\uc2dc\uc9c0.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 6938,
+      "sha256": "d8a22225326377b6a4402cb61c55beb39f106077c5490733ac54402e76c98511",
+      "source_id": "src-d8a22225326377b6",
+      "basename": "\ubcf4\uace0-J5-J73\ud30c\uc77c\ub7ff.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 2003,
+      "sha256": "c5f60727b450e5910963eab465cf896a682722fea479e84c66ff3200a4382206",
+      "source_id": "src-c5f60727b450e591",
+      "basename": "\ubcf4\uace0-\uc791\uc5c548-\ucd5c\uc885\uba54\uc2dc\uc9c0.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 2120,
+      "sha256": "afbb09619de84e2217d2bf59aa7e3e6ed5fec42987be96c4ea5c8d3f02fbabce",
+      "source_id": "src-afbb09619de84e22",
+      "basename": "\uc9c0\uc2dc\uc11c-J42-\uc794\uc5ec\ubd84\ub958.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 2577,
+      "sha256": "3a0b63e493c0a8be8dec73682c44c18784395e8b5ac9bd5531338e92d74a0da0",
+      "source_id": "src-3a0b63e493c0a8be",
+      "basename": "\uc9c0\uc2dc\uc11c-J47-\ubc30\ubd84\uac1c\uc120.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 2306,
+      "sha256": "fad847e4ea7d0235af1d2138594bc7405d572fabc5a439a33413eaaced637797",
+      "source_id": "src-fad847e4ea7d0235",
+      "basename": "\uc9c0\uc2dc\uc11c-J5-J73\ud30c\uc77c\ub7ff.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "bytes": 2318,
+      "sha256": "ab10fe3dbcc362609cf26e1b2e89e18970c775d776b15c14f99800d05ff9af77",
+      "source_id": "src-ab10fe3dbcc36260",
+      "basename": "\uc9c0\uc2dc\uc11c-\uc791\uc5c548-\ub2e8\uacc4\uc0dd\uc0b0.md",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    }
+  ],
+  "date_convention": "provenance_recorded_date is the date of the frozen release provenance, not an inferred source creation date."
+}

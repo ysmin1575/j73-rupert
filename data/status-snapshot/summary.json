@@ -1,0 +1,62 @@
+{
+  "schema": "j73-interim-status-v1",
+  "capture_started_utc": "2026-10-27T01:40:50.233026+00:00",
+  "capture_finished_utc": "2026-10-27T01:41:21.245658+00:00",
+  "capture_started_kst": "2026-10-27T10:40:50.233026+09:00",
+  "capture_finished_kst": "2026-10-27T10:41:21.245658+09:00",
+  "production_update_utc": "2026-10-27T01:40:48.467462+00:00",
+  "total_staged_roots": 2057,
+  "closed_roots": 453,
+  "remaining_roots": 1604,
+  "production_stage": 2,
+  "production_stage_visits_done": 136,
+  "production_stage_visits_total": 1665,
+  "production_stage_initial_closed": 392,
+  "captured_open_boxes": 397906,
+  "stage_of_captured_proof": {
+    "1": {
+      "closed": 431,
+      "open": 1523
+    },
+    "2": {
+      "closed": 22,
+      "open": 81
+    }
+  },
+  "coordinator_counts_and_state_unchanged_during_capture": true,
+  "coordinator_progress_heartbeat_changed": true,
+  "coordinator_sha256": {
+    "progress.json": "43ec77e559b7e342b56340f6510a2a2570edb8a475aeb4e2f99f5d5d974984c2",
+    "state.json": "f8e28ca27d8ef8d73209976a035f5776bdf6021c89e509422f3672091f18d406",
+    "controller52.json": "03aff3e8cf484eab826d1e84605482a4c2383c9be721f9ff31105cdc66bbabfe",
+    "run_config.json": "f540d240f7d59ffa0b23bc2697689044ec404659ea409d0829799f07c42f08ec"
+  },
+  "interpretation": "Production counters and captured proof versions, not a full independent verification. Individual active-root versions are observed during the stated interval; this is not an atomic filesystem snapshot.",
+  "read_contract": "compact_storage53 logical_bytes/read; SQLite connections replaced by strict mode=ro; no hot-journal recovery, locks, writes or production imports with write installation",
+  "closed_roots_by_rule": {
+    "computed-G-SC-COVER": 409,
+    "tube-assisted": 44
+  },
+  "closed_roots_by_proof_stage_and_rule": {
+    "1": {
+      "computed-G-SC-COVER": 392,
+      "tube-assisted": 39
+    },
+    "2": {
+      "computed-G-SC-COVER": 17,
+      "tube-assisted": 5
+    },
+    "3": {},
+    "4": {}
+  },
+  "coordinator_stage_closures": {
+    "closed_before_stage_2": 392,
+    "additional_closed_by_snapshot": 61
+  },
+  "separate_deposit_inventory": {
+    "files": 3771,
+    "physical_bytes": 559517066,
+    "largest_file_bytes": 8867840,
+    "note": "Exact producer files/physical sizes observed for frozen closed roots. Database container sizes include all stored artifacts, including unreferenced versions; logical referenced operations are inventoried separately when exported. Production remained running; no copying or hashing of raw databases was attempted."
+  }
+}

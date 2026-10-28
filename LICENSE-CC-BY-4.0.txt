@@ -1,0 +1,18 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The paper text and the data supplied for this interim release are licensed
+under the Creative Commons Attribution 4.0 International Public License.
+
+Copyright (c) 2026 Sumin Yoo
+
+The complete, controlling legal terms are available at:
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Licence identifier: CC-BY-4.0
+Licence summary: https://creativecommons.org/licenses/by/4.0/
+
+This file is a licence notice and link to the legal terms, not a substitute
+for those terms. Retain credit to the author, the title, this licence link,
+and an indication of changes when adapting or redistributing the material.
+Upstream software retains its original MIT licence and notices; this
+licence notice does not relicense it.

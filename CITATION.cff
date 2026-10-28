@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: >-
+  Please cite the version-specific archive DOI for the software used.
+  Cite the companion interim report separately for its mathematical statements.
+type: software
+title: "Towards a computer-assisted exclusion of Rupert's property for the parabigyrate rhombicosidodecahedron: interim verification package"
+version: "0.1.0"
+authors:
+  - family-names: "Yoo"
+    given-names: "Sumin"
+    affiliation: "Independent researcher, Republic of Korea"
+license: MIT
+# The code is MIT licensed. Paper text and data are CC-BY-4.0;
+# see LICENSES.md and LICENSE-CC-BY-4.0.txt for their scope.
+abstract: >-
+  An interim verification package for local exclusion theorems concerning
+  Johnson solid J73. It contains an independent checker, frozen production
+  status data, tube regions and the certificates specified in the README.
+  The global computation and exhaustive verification remain unfinished.
+keywords:
+  - Rupert problem
+  - Johnson solid J73
+  - parabigyrate rhombicosidodecahedron
+  - exact arithmetic
+  - interval arithmetic
+  - computer-assisted proof
+date-released: "2026-10-28"
+repository-code: "https://github.com/ysmin1575/j73-rupert"
+url: "https://github.com/ysmin1575/j73-rupert"
+# AUTHOR-CONFIRM: insert the software v0.1.0 DOI after Zenodo has issued it.
+# doi: "10.5281/zenodo.SOFTWARE_VERSION_ID"
+# Keep the paper DOI and software concept DOI in README metadata;
+# neither replaces this software version's DOI.

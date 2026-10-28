@@ -1,0 +1,48 @@
+{
+  "command": "python -X utf8 -B code/checker/check.py",
+  "working_directory": "repo",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "started_kst": "2026-10-27T10:45:11+09:00",
+  "result": {
+    "certificates": [
+      "data/certificates/g-root-00012-operation-1.json",
+      "data/certificates/cover-root-00012-operation-229.json",
+      "data/certificates/tube-root-00197-operation-525.json"
+    ],
+    "elapsed_seconds": 1687.1512151998468,
+    "models": {
+      "astra-intersection": 2,
+      "contact-facet": 2658
+    },
+    "regions": 2660,
+    "rule_counts": {
+      "G": 1,
+      "SC": 100,
+      "tube": 1
+    },
+    "scope": "all shipped local certificates and all shipped regions; no complete root or global cover claim",
+    "status": "ACCEPT"
+  },
+  "log_sha256": "c624982ddf26c65d1465616a07bf76b231ddbfb9fe93fddf9e72e7b1c3fdcaf1",
+  "entrypoint_sha256": "56e3fa804707d662bf78a37a948b9b539f1b541493d5b7ba0197ca7f7eba521b",
+  "input_sha256": {
+    "data/tube-regions.json": "3c7730825412bb9eebed513ccac453f20a5aebfb60b71fdfca1ef206fe758cae",
+    "data/certificate-provenance.json": "c1d6a23cb249ac1c1506c893caefcc0a528a615250d30ad95327866ab2c524df",
+    "data/certificates/g-root-00012-operation-1.json": "120ee396c5d3b15160ef068abb3112c73a4dc92f2def096772387bdd2f825021",
+    "data/certificates/cover-root-00012-operation-229.json": "b8c8e545ecb6b16dfc9921ae2258af316f2b599d2a780c60d9e59bdad5fa50bf",
+    "data/certificates/tube-root-00197-operation-525.json": "293cdb07cfc089d11fdcabdbda4423b9a1618247e66ab7cb97815231c1ef0a83"
+  },
+  "mathematical_kernel_sha256": {
+    "cover.py": "6f83720daaa243dde2c14bc72963f81eabc63762da4ea1904865a47d31a42305",
+    "exact.py": "f231f6bbba201f9653fc5444b55b4b693cb1e74b37be27538e8b994db846f2e2",
+    "geometry.py": "5b27f2f110349837c1dd590bb71e27c284dc7bdb74b6e33e94ec1b1dd238ad32",
+    "image.py": "6370e2006a41249edbfb2a8c591df50506202bd76bf1b5585b90158e2fe4dd75",
+    "local.py": "acab5873ece504b7991cfeb538031713fbf1c6bf7de088aafbb5110b6de5c0b3",
+    "polynomial.py": "fa46d1f62fdb63ed85d500ae05a1f064024d8dcef91bf63ee9cd3cd7df5c37b1",
+    "tube.py": "db7f2782b980fc3bde621f8b821ce8cf7be4a48dbadeed6ae5a44616b947bd4d",
+    "tube_intersection.py": "de390b3332ce9266a4b2a56197a1adcef47838a98cb2f3dc98317a05083beb36"
+  },
+  "scope_note": "This standalone run used the full default mode. A later removal of an unused regions-only CLI mode changes receipt routing only. The final self-tests rerun the final harness and all mathematical inputs.",
+  "no_production_mutation": true
+}

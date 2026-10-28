@@ -1,0 +1,17 @@
+{
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "read_api": {
+    "sha256": "0ecc7a04e0d4959847d4fd7e54dbb5789d105bf927f2b2751a7c84cace95bf07",
+    "source_id": "src-0ecc7a04e0d49598",
+    "basename": "compact_storage53.py",
+    "bytes": null,
+    "size_status": "not captured in the frozen provenance",
+    "distribution": "not distributed"
+  },
+  "capture_program_sha256": "e0819bc97e70100513bb1cc793b0350d9416d11b0288f3d013b13165275d7df5",
+  "actual_capture_note": "The generator capture succeeded before a later wording-only correction from post-queue9 to queue8b/queue10 in its open-root index description. Captured logical proof/control bytes and counters were not recaptured or changed.",
+  "strict_readonly_connection": "sqlite3.connect(Path(db).resolve().as_uri()+\"?mode=ro\",uri=True); writable API connections raise PermissionError; no journal recovery",
+  "consistency": "Coordinator state and input bytes equal before/after; six count fields equal before/after; progress heartbeat bytes may differ. Closed result/receipt hashes bind the captured proof. Active-root proofs are captured atomically per file during the interval.",
+  "current_summary_sha256": "145d4f6cd74f64b01a0166dbc548a0121f92c87c45a29fbacfd814116c10dbf3"
+}

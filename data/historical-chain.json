@@ -1,0 +1,107 @@
+{
+  "chain_counts": {
+    "first_sweep": 1248480,
+    "residual": 3524,
+    "operational_closed_1441_by_origin": {
+      "queue10": 15,
+      "continuation6": 1401,
+      "J39": 25
+    },
+    "historical_additional_closed": [
+      2411
+    ],
+    "effective_residual": 2082,
+    "prior_closed": [
+      125,
+      255,
+      1052,
+      1995
+    ],
+    "J47_closed": [
+      37,
+      573,
+      574,
+      763,
+      793,
+      1068,
+      1258,
+      1638,
+      1893,
+      1930,
+      2051,
+      2103,
+      2208,
+      2421,
+      2427,
+      2713,
+      2778,
+      3061,
+      3193,
+      3320,
+      3346
+    ],
+    "staged_roots": 2057
+  },
+  "id_partition_checks": "PASS; 3524 = disjoint union(1441 closures,1 historical closure,2082 residual); staged = 2082 residual minus disjoint 4 prior and 21 J47 closures",
+  "source_banks": [
+    {
+      "sha256": "8ecc7bd0c6c1fc49a49804eac16f2922c31fe098b46d7f39829b01b50ffa2009",
+      "bytes": 9807804,
+      "regions": 2156,
+      "source_id": "src-8ecc7bd0c6c1fc49",
+      "basename": "initial_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "sha256": "d8ad3fbef9cfee0f1186f715110c6e8ab9d842d6e2d0395b7f1e1937613ce7fe",
+      "bytes": 2701912,
+      "regions": 475,
+      "source_id": "src-d8ad3fbef9cfee0f",
+      "basename": "generated_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "sha256": "083086077acc1f50a52960f1e7f2c7f6ac8271d656e42b968ae2829b5a25866e",
+      "bytes": 5658013,
+      "regions": 2631,
+      "source_id": "src-083086077acc1f50",
+      "basename": "runtime_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "sha256": "aada4d312b7ea74140ec8a4dd9342b82a5088af25d51b089cc3ffb2ef5918edb",
+      "bytes": 20651,
+      "regions": 3,
+      "source_id": "src-aada4d312b7ea741",
+      "basename": "fitted_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "sha256": "2aad96c3d6bf816a036d0a398044e99e7c65a878f8dec0f4d4aa088c2cfe325d",
+      "bytes": 55701,
+      "regions": 11,
+      "source_id": "src-2aad96c3d6bf816a",
+      "basename": "demand_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    },
+    {
+      "sha256": "9b342683227fcf375f99f1db41e54be44e1a3c6e73ca454c785f8380ff35ba35",
+      "bytes": 84462,
+      "regions": 15,
+      "source_id": "src-9b342683227fcf37",
+      "basename": "new_regions.json",
+      "provenance_recorded_date": "2026-10-27",
+      "distribution": "not distributed"
+    }
+  ],
+  "unique_regions": 2660,
+  "region_models": {
+    "contact-facet": 2658,
+    "astra-intersection": 2
+  }
+}

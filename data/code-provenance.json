@@ -1,0 +1,93 @@
+{
+  "unchanged_kernel": [
+    {
+      "path": "code/checker/exact.py",
+      "sha256": "f231f6bbba201f9653fc5444b55b4b693cb1e74b37be27538e8b994db846f2e2",
+      "modified": false,
+      "source_id": "src-f231f6bbba201f96",
+      "source_basename": "exact.py",
+      "source_bytes": 5545
+    },
+    {
+      "path": "code/checker/polynomial.py",
+      "sha256": "fa46d1f62fdb63ed85d500ae05a1f064024d8dcef91bf63ee9cd3cd7df5c37b1",
+      "modified": false,
+      "source_id": "src-fa46d1f62fdb63ed",
+      "source_basename": "polynomial.py",
+      "source_bytes": 7756
+    },
+    {
+      "path": "code/checker/geometry.py",
+      "sha256": "5b27f2f110349837c1dd590bb71e27c284dc7bdb74b6e33e94ec1b1dd238ad32",
+      "modified": false,
+      "source_id": "src-5b27f2f110349837",
+      "source_basename": "geometry.py",
+      "source_bytes": 4044
+    },
+    {
+      "path": "code/checker/image.py",
+      "sha256": "6370e2006a41249edbfb2a8c591df50506202bd76bf1b5585b90158e2fe4dd75",
+      "modified": false,
+      "source_id": "src-6370e2006a41249e",
+      "source_basename": "image.py",
+      "source_bytes": 9010
+    },
+    {
+      "path": "code/checker/local.py",
+      "sha256": "acab5873ece504b7991cfeb538031713fbf1c6bf7de088aafbb5110b6de5c0b3",
+      "modified": false,
+      "source_id": "src-acab5873ece504b7",
+      "source_basename": "local.py",
+      "source_bytes": 7955
+    },
+    {
+      "path": "code/checker/cover.py",
+      "sha256": "6f83720daaa243dde2c14bc72963f81eabc63762da4ea1904865a47d31a42305",
+      "modified": false,
+      "source_id": "src-6f83720daaa243dd",
+      "source_basename": "cover.py",
+      "source_bytes": 11376
+    },
+    {
+      "path": "code/checker/tube.py",
+      "sha256": "db7f2782b980fc3bde621f8b821ce8cf7be4a48dbadeed6ae5a44616b947bd4d",
+      "modified": false,
+      "source_id": "src-db7f2782b980fc3b",
+      "source_basename": "tube.py",
+      "source_bytes": 9086
+    },
+    {
+      "path": "code/checker/tube_intersection.py",
+      "sha256": "de390b3332ce9266a4b2a56197a1adcef47838a98cb2f3dc98317a05083beb36",
+      "modified": false,
+      "source_id": "src-de390b3332ce9266",
+      "source_basename": "tube_intersection.py",
+      "source_bytes": 6367
+    },
+    {
+      "path": "code/discovery/check.py",
+      "sha256": "b1a6c2d9c1bf223c9592b2dd6e1158997df364e278e893fb10d0c64c255d29c9",
+      "modified": false,
+      "source_id": "src-b1a6c2d9c1bf223c",
+      "source_basename": "check.py",
+      "source_bytes": 7943
+    },
+    {
+      "path": "code/discovery/evidence.json",
+      "sha256": "f8c171eda5c6b803bf631c25215ef9fa5b79b02a950d249e30bdd833eaeeca70",
+      "modified": false,
+      "source_id": "src-f8c171eda5c6b803",
+      "source_basename": "evidence.json",
+      "source_bytes": 15133
+    },
+    {
+      "path": "code/discovery/NOTICE",
+      "sha256": "fa0b60c409cf8a36ccb5d4fb52c04eef73c2566b29dc1e55f5f59194dbe9eca6",
+      "modified": false,
+      "source_id": "src-fa0b60c409cf8a36",
+      "source_basename": "NOTICE",
+      "source_bytes": 1086
+    }
+  ],
+  "entrypoint": "The release check.py is a serial harness without runtime, worker or sampling caps over unchanged predicates. Input-format and resource limits fail loudly; the historical timed/worker CLI and bounded exporter are not shipped."
+}

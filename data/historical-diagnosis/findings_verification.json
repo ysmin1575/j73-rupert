@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "central_symmetry_exact": true,
+  "identity_witnesses_rechecked": 5452,
+  "nonidentity_witnesses_rechecked": 120,
+  "nonidentity_witnesses_total": 5718,
+  "all_witness_aggregate_matches": true,
+  "dominant_volume_class_roots": {
+    "D5": 129,
+    "none": 836,
+    "H1": 132,
+    "T": 211,
+    "CT": 154,
+    "TC": 60,
+    "identity": 6,
+    "other": 76,
+    "H4": 11
+  },
+  "inherited_families": {
+    "D5": {
+      "roots": 247,
+      "boxes": 56972,
+      "volume": 3.318485572907426e-06
+    },
+    "H1": {
+      "roots": 239,
+      "boxes": 61621,
+      "volume": 6.713825717981398e-06
+    },
+    "T": {
+      "roots": 608,
+      "boxes": 127807,
+      "volume": 2.4023444045135582e-05
+    },
+    "CT": {
+      "roots": 181,
+      "boxes": 55714,
+      "volume": 1.0339900494671638e-06
+    },
+    "TC": {
+      "roots": 110,
+      "boxes": 20440,
+      "volume": 1.8339818829970339e-06
+    },
+    "H3": {
+      "roots": 35,
+      "boxes": 7713,
+      "volume": 1.7489046712752046e-06
+    },
+    "H4": {
+      "roots": 72,
+      "boxes": 17593,
+      "volume": 6.898370857503806e-06
+    },
+    "H2": {
+      "roots": 47,
+      "boxes": 11463,
+      "volume": 2.6018905143905514e-07
+    },
+    "H5": {
+      "roots": 4,
+      "boxes": 464,
+      "volume": 1.116953871875783e-07
+    },
+    "H6": {
+      "roots": 6,
+      "boxes": 1033,
+      "volume": 3.327789445208847e-07
+    },
+    "H7": {
+      "roots": 4,
+      "boxes": 573,
+      "volume": 1.7537983346181507e-07
+    },
+    "H8": {
+      "roots": 2,
+      "boxes": 343,
+      "volume": 3.1826252666843578e-09
+    },
+    "H9": {
+      "roots": 1,
+      "boxes": 111,
+      "volume": 4.99308672026279e-09
+    },
+    "H10": {
+      "roots": 11,
+      "boxes": 1539,
+      "volume": 3.9174866291010685e-09
+    },
+    "C": {
+      "roots": 26,
+      "boxes": 5066,
+      "volume": 1.0473419649735978e-08
+    },
+    "H11": {
+      "roots": 16,
+      "boxes": 1197,
+      "volume": 1.9517897577499195e-16
+    },
+    "H13": {
+      "roots": 1,
+      "boxes": 27,
+      "volume": 8.078702109189259e-09
+    },
+    "H14": {
+      "roots": 1,
+      "boxes": 58,
+      "volume": 5.4980056020871164e-09
+    },
+    "H15": {
+      "roots": 2,
+      "boxes": 418,
+      "volume": 2.561995807775289e-08
+    },
+    "H16": {
+      "roots": 2,
+      "boxes": 212,
+      "volume": 3.523913029399017e-10
+    }
+  },
+  "relative_distance_numeric": {
+    "d<=h": {
+      "boxes": 156749,
+      "volume": 2.72250147452715e-05,
+      "roots": 1502
+    },
+    "d>h": {
+      "boxes": 213615,
+      "volume": 1.9288146944145903e-05,
+      "roots": 1581
+    }
+  },
+  "timing": {
+    "wall_seconds": 15.739810099825263,
+    "cpu_seconds": 15.734375
+  }
+}

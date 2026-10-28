@@ -1,0 +1,10 @@
+The mathematical checker and coordinate conventions retain Gihyo Jung's
+MIT attribution and full permission notice in code/checker/NOTICE.
+The integrated paper preserves its upstream notice in paper/NOTICE.
+The exact discovery program preserves its notice in code/discovery/NOTICE.
+These notices are included without alteration from the source packages.
+
+The release serial harness, integrity tools and documentation are prepared
+for Sumin Yoo's interim J73 report. The independent mathematical kernel
+modules are copied without changes; see data/code-provenance.json.
+No producer search engine is included or required by the mathematical tests.

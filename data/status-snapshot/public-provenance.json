@@ -1,0 +1,117 @@
+{
+  "schema": "j73-public-snapshot-provenance-v1",
+  "provenance_recorded_date": "2026-10-27",
+  "capture_started_utc": "2026-10-27T01:40:50.233026+00:00",
+  "capture_finished_utc": "2026-10-27T01:41:21.245658+00:00",
+  "original_snapshot_manifest": {
+    "basename": "SHA256SUMS",
+    "bytes": 1751,
+    "sha256": "285e16a0922f52f37f3235161407efd048894f8f432013218004e532af28701e",
+    "distribution": "not distributed; replaced by public snapshot manifest"
+  },
+  "summary_sha256": "145d4f6cd74f64b01a0166dbc548a0121f92c87c45a29fbacfd814116c10dbf3",
+  "summary_binding": "summary.json is byte-identical; coordinator_sha256 values commit to original captured bytes, including the omitted controller record, not the public file list.",
+  "omitted_source_files": [
+    {
+      "bytes": 159,
+      "sha256": "03aff3e8cf484eab826d1e84605482a4c2383c9be721f9ff31105cdc66bbabfe",
+      "source_id": "src-03aff3e8cf484eab",
+      "basename": "controller52.json",
+      "distributed": false,
+      "distribution": "not distributed",
+      "capture_date": "2026-10-27",
+      "reason": "Operational process identifiers are omitted from the public snapshot."
+    }
+  ],
+  "public_derivatives": [
+    {
+      "original_basename": "capture-method.json",
+      "original_bytes": 1197,
+      "original_sha256": "842373ead52b6efd11a96b973b72ee1a139c715d098cf6112a7b8149906e576f",
+      "distributed_as": "capture-method.json",
+      "current_bytes": 1336,
+      "current_sha256": "c3adcd202abf2d19a81734a63ffe264c492e83838f49aa05cac3f46aa5fc1e5e"
+    },
+    {
+      "original_basename": "captured-root-versions.json",
+      "original_bytes": 645027,
+      "original_sha256": "be4c305426b15ed9f321774fa632de7f5fd78f459f0d91a0be81d0834e122ee1",
+      "distributed_as": "captured-root-versions.json",
+      "current_bytes": 799166,
+      "current_sha256": "a4f4c7a87c56c7bff2015a0326a06786b073cf3bd20663d50ee7de95e9553e4d"
+    },
+    {
+      "original_basename": "chain-audit.md",
+      "original_bytes": 13911,
+      "original_sha256": "af5677f5470dcad7885c93e5a8dc86872c855c0d030cd36eb2bacbf3b2b13f6b",
+      "distributed_as": "historical-accounting.md",
+      "current_bytes": 9487,
+      "current_sha256": "0cc3e8952e5bb8683f87c5781a95b6643f9df5fa925f4f36c0950af09430149b"
+    },
+    {
+      "original_basename": "controller52.json",
+      "original_bytes": 159,
+      "original_sha256": "03aff3e8cf484eab826d1e84605482a4c2383c9be721f9ff31105cdc66bbabfe",
+      "distributed_as": null,
+      "current_bytes": null,
+      "current_sha256": null
+    },
+    {
+      "original_basename": "earlier-closures.json",
+      "original_bytes": 295560,
+      "original_sha256": "75c8434f684d039a449a5f0109f39d4edc2b7ee79dfd20c5ab49990d40b3b46e",
+      "distributed_as": "earlier-closures.json",
+      "current_bytes": 287431,
+      "current_sha256": "723c11b17bc64e7461841839dfd4e90beb675a49685fbbf6a1fa9d398345088f"
+    },
+    {
+      "original_basename": "historical-chain.json",
+      "original_bytes": 2342,
+      "original_sha256": "52ff79da883c150b6e4e758a5c2ea022c46ed9947c02188175fe56a22a82da60",
+      "distributed_as": "historical-chain.json",
+      "current_bytes": 2841,
+      "current_sha256": "ca6a38e9624e712600158994ac6fa04aa09926540409f89151526717b5917d71"
+    },
+    {
+      "original_basename": "historical-diagnosis-manifest.json",
+      "original_bytes": 2217,
+      "original_sha256": "27fae116f8aad87d72f92bfa15bc5676156c50e1f8a3709acd924bb0a4481860",
+      "distributed_as": "historical-diagnosis-manifest.json",
+      "current_bytes": 3360,
+      "current_sha256": "35ff5f02f11aa67f6e3cf7d3bb389f4aa2d909df539379318dd01e884e44432e"
+    },
+    {
+      "original_basename": "historical-source-manifest.json",
+      "original_bytes": 10433,
+      "original_sha256": "e27c21e925da6f60b16eb68437d7cd9b7b8d70b989b891ba7380aeb7ddfd869a",
+      "distributed_as": "historical-source-manifest.json",
+      "current_bytes": 16306,
+      "current_sha256": "bbd3fefb7fcc643f81f5f3093c6e421d9e659d9e913ab7384c55f66489931b22"
+    },
+    {
+      "original_basename": "omitted-historical-witness.json",
+      "original_bytes": 464,
+      "original_sha256": "99c5a8832441df678f176c37118a32f2809e1d905e38e9dbdf86c93d2ee22801",
+      "distributed_as": "omitted-historical-witness.json",
+      "current_bytes": 545,
+      "current_sha256": "aa64d69ac17daba63c9cdb3196b425c20c94b76e8e6cdadfc3dd332db6a626bf"
+    },
+    {
+      "original_basename": "README.md",
+      "original_bytes": 4856,
+      "original_sha256": "fcb82279b94e2dd9bbeddbaada412218356f40c0d40679fcc6567ed63cafd857",
+      "distributed_as": "README.md",
+      "current_bytes": 6091,
+      "current_sha256": "8b9247a6b9510f13ba74109797be69e2503167d115d7e28fb798315489f70509"
+    },
+    {
+      "original_basename": "separate-deposit-files.csv.gz",
+      "original_bytes": 22252,
+      "original_sha256": "b742aba8df38b63fa061deb9a2bafd35ec5b5140eeda02cc60d2eb7472cfec43",
+      "distributed_as": "separate-deposit-files.csv.gz",
+      "current_bytes": 60151,
+      "current_sha256": "59b932456adac49d728c5fffd550f9c92270351182153ca06aae464cf442b262"
+    }
+  ],
+  "missing_metadata": "Original root-source byte sizes and raw separate-deposit file digests were not captured. Null/empty fields identify unavailable metadata; no later production state was read."
+}

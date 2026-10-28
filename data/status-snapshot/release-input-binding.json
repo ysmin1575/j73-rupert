@@ -1,0 +1,9 @@
+{
+  "tube_region_bank": {
+    "path": "../tube-regions.json",
+    "bytes": 4678244,
+    "sha256": "3c7730825412bb9eebed513ccac453f20a5aebfb60b71fdfca1ef206fe758cae",
+    "unique_regions": 2660
+  },
+  "history": "Historical source records retain their capture times and are frozen as provenance of this release; their counts are not the current production counters."
+}

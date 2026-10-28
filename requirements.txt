@@ -1,0 +1,3 @@
+# Mathematical checking uses only the Python standard library.
+# The PDF page-count check uses this version tested for the release.
+pypdf==6.20.1

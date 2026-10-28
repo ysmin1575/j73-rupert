@@ -1,0 +1,38 @@
+{
+  "selection": "First G, first fully closed fan COVER, and first tube operation in increasing closed-root index and captured operation insertion order. This is a disclosed example set, not a statistical sample or a root-closure audit.",
+  "certificates": [
+    {
+      "path": "data/certificates/g-root-00012-operation-1.json",
+      "rule": "G",
+      "source_root": 12,
+      "source_operation": "1",
+      "source_artifact": "operations/00000001.verified52.json",
+      "source_artifact_logical_sha256": "54bbeb4e6b3b0fed12f13a1d6623efc6da23e3d9e6262c1459ed0f5048409175",
+      "frozen_proof_sha256": "6b119b789bc234561010342002c94a55a510cdb3699ff0832c99ea41f3aeb52d",
+      "scope": "one original angular box in a closed staged root; no complete root or full-grid claim",
+      "bytes": 696
+    },
+    {
+      "path": "data/certificates/cover-root-00012-operation-229.json",
+      "rule": "COVER",
+      "source_root": 12,
+      "source_operation": "229",
+      "source_artifact": "operations/00000229.verified52.json",
+      "source_artifact_logical_sha256": "ec83856bbccb34085dcd127ba3c9a0a63601557cde4a2308762e4d146fa42d3e",
+      "frozen_proof_sha256": "6b119b789bc234561010342002c94a55a510cdb3699ff0832c99ea41f3aeb52d",
+      "scope": "one original angular box in a closed staged root; no complete root or full-grid claim",
+      "bytes": 97224
+    },
+    {
+      "path": "data/certificates/tube-root-00197-operation-525.json",
+      "rule": "tube",
+      "source_root": 197,
+      "source_operation": "525",
+      "source_artifact": "operations/00000525.json",
+      "source_artifact_logical_sha256": "f47d5bcd3dee7931547653f0623bef27c246d1ce76530fd92ff9746aaabdeed5",
+      "frozen_proof_sha256": "21dc8a0fa09396e1515f32ddb2e17a94885f9aa945c1ea0c36f4d8b0a7936a82",
+      "scope": "one original angular box in a closed staged root; no complete root or full-grid claim",
+      "bytes": 3587
+    }
+  ]
+}

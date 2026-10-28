@@ -1,0 +1,11 @@
+{
+  "filename": "lambda1_witnesses.jsonl.gz",
+  "bytes": 3304005,
+  "sha256": "381e7f19af08480a446ab880e00ffb17c164bece50432d957a797b40c02610a4",
+  "distributed": false,
+  "reason": "Historical equality-witness payloads use a format not supported by the released exclusion checker. Dated summaries and original hashes are retained; no new exhaustive equality replay is claimed.",
+  "source_id": "src-381e7f19af08480a",
+  "basename": "lambda1_witnesses.jsonl.gz",
+  "provenance_recorded_date": "2026-10-27",
+  "distribution": "not distributed"
+}

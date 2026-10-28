@@ -1,0 +1,79 @@
+The round~8 diagnostic is the rolling snapshot captured on
+27 October 2026, 01:16:44--01:17:26 KST. It contained 1,615 open staged
+roots and 370,364 pending boxes. These historical counts are not the
+current counters in Table~\ref{tab:counts}. Its source records and
+SHA-256 digests are retained with the release provenance.
+
+\begin{table}[ht]
+\centering\small
+\caption{Historical round~8 frontier: numerical family labels and
+rigorous scale-one witnesses.}
+\label{tab:frontier-family}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Label & Open boxes & Roots met & $\lambda=1$ boxes\\
+\midrule
+T & 55,032 & 558 & 3,596\\
+D5 & 27,666 & 250 & 0\\
+H1 & 38,082 & 243 & 0\\
+CT & 50,593 & 203 & 0\\
+TC & 11,295 & 137 & 0\\
+H4 & 2,555 & 54 & 0\\
+identity & 5,452 & 267 & 5,452\\
+other & 16,142 & 178 & 0\\
+none & 163,547 & 935 & 2,122\\
+\midrule
+Total boxes & 370,364 & & 11,170\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The family label uses the closer of the two screen lifts and the nearest
+catalogue rotation at the box midpoint, with a cutoff of $0.01$ radians;
+exact identity intersections take precedence. The labels $T,D5,H1,CT,TC,H4$
+are names in that fixed catalogue, ``other'' collects its remaining
+families, and ``none'' means outside the cutoff. The box classes are
+disjoint, but one root can meet several classes, so the root column
+cannot be added. These midpoint labels do not certify incidence. In
+particular, 2,122 boxes labelled ``none'' have rigorous $T$ witnesses.
+
+\begin{table}[ht]
+\centering\small
+\caption{Depth in the same historical round~8 snapshot.}
+\label{tab:frontier-depth}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Depth & Open boxes & Roots met & $\lambda=1$ boxes\\
+\midrule
+0--9 & 289,143 & 1,348 & 9,043\\
+10--19 & 79,239 & 580 & 2,092\\
+20--29 & 1,650 & 29 & 35\\
+30 & 332 & 23 & 0\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The rigorous witnesses establish scale one in 11,170 boxes of 577 roots:
+5,452 identity boxes and 5,718 $T$ boxes. The identity and $T$ root counts,
+267 and 316, overlap. Identity witnesses use exact rational
+intersections. The nonidentity witnesses use a rational outer angle,
+an outward-rounded inverse-frame enclosure inside the original box,
+and exact symmetry or rigorous common-hull support inequalities giving
+equality of the complete shadows. A catalogue match alone is insufficient.
+The other 359,194 boxes are unclassified with respect to existence of a
+scale-one point; no rigorous negative census was completed. Each reported
+positive witness passed its construction or recovery check. The later
+separate cross-check repeated every identity witness and a sample of
+120 $T$ witnesses, rather than a second exhaustive replay of the latter.
+This release includes the historical summaries and source hashes, but
+omits the 3,304,005-byte witness file. Its format is not supported by the
+exclusion checker, and the historical equality witnesses were not
+replayed for this release.
+
+All pending boxes of the 23 roots in the depth-30 row were at that depth.
+Their small widths do not close their roots. Reapplying an unchanged
+depth-limited search does not by itself resolve them. The diagnostic
+studies found some additional finite tube covers in private copies, but
+those covers were not production commits or independent acceptances of
+the complete original-grid chain, and are not added to the production
+closure counter here.
