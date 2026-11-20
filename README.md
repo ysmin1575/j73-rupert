@@ -1,17 +1,28 @@
-# Towards a computer-assisted exclusion of Rupert's property for the parabigyrate rhombicosidodecahedron
+# The Rupert Problem for the Johnson Solid J73
 
-Interim report, version 0.1. Sumin Yoo, Independent researcher, Republic of Korea.
+Closing report, version 0.2. Sumin Yoo, Independent researcher, Republic of Korea.
 
-Publication date: 28 October 2026.
-Repository: https://github.com/ysmin1575/j73-rupert.
+Release date 2026-11-20.
 
-This release presents local exclusion theorems for Johnson solid J73, an
-independent checker, a small set of local certificates, tube regions, and a
-frozen account of the running computation. The computation and exhaustive
-verification of the complete cover remain unfinished. No conclusion that
-J73 is non-Rupert is claimed, and no completion date is given.
+The closing report records where the search for a computer-assisted
+exclusion of Rupert's property for the parabigyrate rhombicosidodecahedron
+stopped. It describes the stopped production state, locally replayed
+closures from a separate remote trial, the remaining geometric difficulty
+around coincident projections, and the work needed to resume. The global
+exclusion proof and exhaustive verification of the cover remain unfinished.
 
-## What the release establishes
+- [Closing report (PDF)](paper/j73-closing.pdf)
+- [Closing report (LaTeX source)](closing-source/j73-closing.tex)
+- [Source ledger for the report's numbers](paper/numbers.json)
+- [Interim report (PDF)](paper/paper.pdf)
+- [Release history](CHANGELOG.md)
+
+The production counters and the remote replay results refer to separate
+work records. The closing report states the scope of each and the number
+ledger records the source files and hashes. This repository carries the
+interim mathematical evidence and checker described below.
+
+## What the interim release establishes
 
 The paper proves a hidden family of coincident projections and gives local
 exclusion criteria based on support gaps, signed contacts, contact patches,
@@ -41,14 +52,11 @@ certificate includes that connection.
 
 An earlier serial standalone replay accepted every supplied local certificate
 and all 2,660 regions in 1687.151 seconds. Its original input/kernel hashes
-and result remain in `data/checker-replay.json`. The current release self-test
-run is recorded separately in `data/release-selftest.json`, with its exit code,
-checks, measured time, environment and code/input digests. It checks the
-manifests, all three local certificates, all 2,660 regions, discovery and PDF
-metadata. The final distribution is also tested from a new local Git clone;
-that packaging receipt accompanies the release. Tests print to standard output
-and do not change repository files. These are local-evidence results, not
-acceptance of a complete staged root or the original-to-final cover.
+and result are in `data/checker-replay.json`. The interim distribution's
+historical self-test receipt is in `data/release-selftest.json`. The test
+checks the manifests, all three local certificates, all 2,660 regions,
+discovery and interim PDF metadata. Its mathematical replay is limited to
+the shipped interim evidence.
 
 ## Run the checks
 
@@ -64,9 +72,10 @@ python -X utf8 -B self_test.py
 
 The self-test verifies the SHA-256 manifests, replays every supplied local
 certificate and every tube region, runs the discovery checks, and checks
-the paper's PDF page count. It uses only files in this repository. It does
-not query the live production folders or rerun the search. A successful
-exit is evidence for those tasks only.
+the interim paper's PDF metadata and page count. The distribution manifest
+also binds the closing report and its number ledger. The test works with
+the files shipped here. The production state and remote replay records
+described in the closing report have their own evidence sources.
 
 The mathematical checks can also be run separately without installing
 `pypdf`:
@@ -94,9 +103,9 @@ Do not run Python with `-O` or `PYTHONOPTIMIZE`. The self-test rejects
 optimized execution. If saving the test output, write it outside this
 repository so that the recorded distribution files remain unchanged.
 
-## Frozen production status
+## Interim production snapshot
 
-The current counters below come from `data/status-snapshot/summary.json`,
+The interim counters below come from `data/status-snapshot/summary.json`,
 captured on 27 October 2026 from 10:40:50.233026 to 10:41:21.245658 KST
 (01:40:50.233026 to 01:41:21.245658 UTC). The production coordinator's
 recorded update was 01:40:48.467462 UTC. The capture read logical records
@@ -195,29 +204,29 @@ historical file for an optional separate deposit.
 
 | Path | Contents |
 |---|---|
-| `paper/` | Integrated interim article, TeX sources and figures |
+| `paper/` | Interim article with TeX sources and figures, closing report PDF and number ledger |
+| `closing-source/` | Closing report LaTeX source |
 | `PROOF_MAP.md` | Mathematical argument, certificate interfaces and outstanding obligations |
 | `code/checker/` | Independent checker v2 mathematical kernel and serial release entrypoint |
 | `code/discovery/` | Unchanged discovery checker and its exact evidence |
 | `code/verify_tube_regions.py` | Region-only entrypoint over the independent kernel |
 | `data/certificates/` | Three disclosed local examples |
 | `data/tube-regions.json` | All 2,660 distinct region payloads |
-| `data/status-snapshot/` | Frozen current production status and source-file inventory |
+| `data/status-snapshot/` | Frozen interim production status and source-file inventory |
 | `data/historical-diagnosis/` | Dated English historical summary and four diagnostic JSON files; internal reports and raw witnesses omitted |
 | `data/*provenance*.json` | Certificate, region and source-code provenance |
 | `data/checker-replay.json` | Standalone all-input checker result with code and input bindings |
-| `data/pdf-metadata.json` | Declared PDF page count and PDF identity |
-| `DATA_DEPOSIT.md` | Scope and exact physical inventory for the closed-root certificates to accompany the final version |
+| `data/pdf-metadata.json` | Interim PDF page count and identity |
+| `DATA_DEPOSIT.md` | Interim physical inventory and proposed scope of a separate certificate deposit |
 
 The observed closed-root producer files total 559,517,066 bytes across
 3,771 files, larger than the intended GitHub data budget. Each observed
-file is below 50 MB; the largest is 8,867,840 bytes. The full closed-root
-certificates are not deposited in this interim version; they will accompany
-the final version. No deposit date is promised. The exact observed inventory is
-`data/status-snapshot/separate-deposit-files.csv.gz`. It is not a frozen
-copy of mutable database containers or a verified certificate archive.
-See [DATA_DEPOSIT.md](DATA_DEPOSIT.md) for what a separate deposit would
-need. No such online data record has been created during preparation.
+file is below 50 MB; the largest is 8,867,840 bytes. The exact observed
+inventory is `data/status-snapshot/separate-deposit-files.csv.gz`. It lists
+the physical files recorded during the interim capture. The full
+closed-root certificate forests are outside the scope of this release.
+See [DATA_DEPOSIT.md](DATA_DEPOSIT.md) for the scope of a possible separate
+deposit.
 
 ## Checker provenance and trust
 
@@ -237,10 +246,17 @@ base includes the mathematical arguments, parser, arithmetic and geometry
 implementations, Python runtime and hardware. A complete proof-assistant
 verification has not been supplied.
 
-## Rebuild the paper or update metadata
+## Rebuild the papers or update metadata
 
-Typesetting is separate from the mathematical tests. With Tectonic
-installed, run from this repository:
+Typesetting is separate from the mathematical tests. To rebuild the closing
+report with Tectonic, run from this repository:
+
+```powershell
+New-Item -ItemType Directory -Force paper/build | Out-Null
+tectonic --untrusted --outdir paper/build closing-source/j73-closing.tex
+```
+
+The interim paper has its own source and metadata:
 
 ```powershell
 Push-Location paper
@@ -248,10 +264,9 @@ tectonic --untrusted paper.tex
 Pop-Location
 ```
 
-Tectonic may download TeX resources on its first run. A page count is an
-integrity check, not a substitute for viewing the PDF. Inspect the title
-page, status table and AI-use paragraph after changing the article, and render
-and inspect every page image for clipping, overlap, missing glyphs and legibility.
+Tectonic may download TeX resources on its first run. After changing a
+paper, render and inspect every page for clipping, overlap, missing glyphs
+and legibility.
 
 After intentional document or metadata changes, run:
 
@@ -269,19 +284,16 @@ the same `.gitignore` exclusions. In a checkout the manifest paths plus
 `SHA256SUMS` must equal the Git-tracked list; stage additions and deletions
 before refreshing. The self-test repeats the file-set check.
 
-After typesetting, update `data/pdf-metadata.json` with actual bytes, pages,
-PDF SHA-256 and the SHA-256 of every TeX source, including figures. Move the
-previous visual-check record to `visual_review_history`; create a new
-`visual_review` with the time, every inspected page, observations, PDF SHA
-and TeX bindings only after viewing every new page image. Refresh the public
-self-test receipt after a new full run, then refresh hashes. Final packaging
-must be tested from a new Git-tracked clone. Do not change certificate data
-or checker predicates to make a failed test pass.
+The interim paper's metadata in `data/pdf-metadata.json` binds
+`paper/paper.pdf` and the interim TeX files under `paper/`. The closing
+report's source is kept in `closing-source/` so that the interim metadata
+continues to describe the interim paper. Record a fresh verification result
+after applying release metadata and rebuilding the closing report.
 
 From that verified Git checkout, build the deterministic archive outside it:
 
 ```powershell
-python -X utf8 -B build_release.py ..\j73-rupert-main-doi.zip
+python -X utf8 -B build_release.py ..\j73-rupert-v0.2.0.zip
 ```
 
 The builder checks every hash and requires an exact match to the Git-tracked
@@ -289,20 +301,15 @@ file list. Ignored virtual environments, PDF logs and page images are excluded.
 
 ## Citation, licences and confirmation
 
-Software version DOI: https://doi.org/10.5281/zenodo.23724948
+Use the version DOI of the software you used. Cite the paper separately for
+its mathematical statements. `CITATION.cff` describes software version 0.2.0.
 
-Software concept DOI: https://doi.org/10.5281/zenodo.23724947
-
-Paper DOI: https://doi.org/10.5281/zenodo.23725007
-
-Use the software version-specific DOI for v0.1.0, and cite
-the paper separately. The paper is a separate Zenodo preprint with the paper DOI above. `CITATION.cff` describes software version 0.1.0.
-The publication date is 28 October 2026, and the repository URL is
-https://github.com/ysmin1575/j73-rupert. The article is labelled
-`Interim report, version 0.1`. The DOI update moves main to a new commit;
-the v0.1.0 tag and its Zenodo software record remain unchanged. The software
-archive PDF contains DOI placeholders; the separate preprint PDF contains
-the DOIs. These are different files.
+| Record | Version DOI | Concept DOI |
+|---|---|---|
+| Closing report v0.2 | [10.5281/zenodo.24393858](https://doi.org/10.5281/zenodo.24393858) | [10.5281/zenodo.23725006](https://doi.org/10.5281/zenodo.23725006) |
+| Software v0.2.0 | Assigned by Zenodo at release; listed under the concept DOI | [10.5281/zenodo.23724947](https://doi.org/10.5281/zenodo.23724947) |
+| Interim report v0.1 | [10.5281/zenodo.23725007](https://doi.org/10.5281/zenodo.23725007) | [10.5281/zenodo.23725006](https://doi.org/10.5281/zenodo.23725006) |
+| Software v0.1.0 | [10.5281/zenodo.23724948](https://doi.org/10.5281/zenodo.23724948) | [10.5281/zenodo.23724947](https://doi.org/10.5281/zenodo.23724947) |
 
 Code is MIT licensed. The paper text and data are CC BY 4.0. Retain
 `LICENSE`, `LICENSE-CC-BY-4.0.txt`, `LICENSES.md` and the upstream notices.

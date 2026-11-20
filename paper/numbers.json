@@ -1,0 +1,1047 @@
+{
+  "description": "Provenance of the numerical statements, mathematical constants, and numerical identifiers in the J73 closing report.",
+  "source_path_base": "Paths are relative to the archived johnson directory; SHA-256 covers original stored bytes, including compression.",
+  "scope": "Archived source files referenced here need not be in the public repository. The ledger indexes evidence and is not a new certificate format or an exhaustive proof replay.",
+  "manuscript": {
+    "tex": {
+      "file": "j73-closing.tex",
+      "sha256": "414509604fd8d016c68183fdd274b424642ad709679489c5beb4c8a434707d6b"
+    },
+    "pdf": {
+      "file": "j73-closing.pdf",
+      "sha256": "6338bd02949ab37a7cb0ee73a28238d52383d261f4d57f379a3c33f84b547528"
+    }
+  },
+  "publication_placeholders": {
+    "date": "2026-11-20",
+    "paper_version_doi": "10.5281/zenodo.24393858",
+    "note": "Filled after the Zenodo record 10.5281/zenodo.24393858 was published on 2026-11-20. The copy deposited on Zenodo carries the unfilled placeholders; the manuscript hashes are unchanged."
+  },
+  "claims": [
+    {
+      "id": "johnson-solid-name",
+      "paper_values": {
+        "catalogue_designation": "J73"
+      },
+      "paper_locations": [
+        "Title",
+        "Abstract",
+        "Main text",
+        "References"
+      ],
+      "sources": [
+        {
+          "source": "interim-paper",
+          "locator": "Title metadata, abstract and section 'J73 and its symmetry reduction'"
+        }
+      ]
+    },
+    {
+      "id": "closing-version",
+      "paper_values": {
+        "version": "v0.2"
+      },
+      "paper_locations": [
+        "Title block"
+      ],
+      "sources": [
+        {
+          "source": "instructions",
+          "locator": "Line 2, requested closing-report version"
+        }
+      ]
+    },
+    {
+      "id": "projection-formulation",
+      "paper_values": {
+        "projections_compared": 2
+      },
+      "paper_locations": [
+        "What a complete proof would require"
+      ],
+      "sources": [
+        {
+          "source": "interim-paper",
+          "locator": "Lines 83–92, positive clearance and strict containment of two planar orthographic projections"
+        }
+      ]
+    },
+    {
+      "id": "production-population",
+      "paper_values": {
+        "closed": 734,
+        "total": 2057,
+        "open": 1323
+      },
+      "paper_locations": [
+        "Abstract",
+        "Recorded results"
+      ],
+      "sources": [
+        {
+          "source": "production-latest-progress",
+          "locator": "$.closed_roots, $.total_roots, $.remaining_roots"
+        },
+        {
+          "source": "production-status-check",
+          "locator": "Line 5, current status output citing last recorded production counters"
+        }
+      ],
+      "derivation": "Closed plus open equals the fixed switched-production queue size. The queue's roots are carried forward from earlier computation; the total is not the size of the original proof grid."
+    },
+    {
+      "id": "production-stop-time",
+      "paper_values": {
+        "date": "2026-11-20",
+        "local_time": "17:25",
+        "zone": "KST"
+      },
+      "paper_locations": [
+        "Recorded results",
+        "Stage table"
+      ],
+      "sources": [
+        {
+          "source": "instructions",
+          "locator": "Line 60, operator-reported formal stop"
+        },
+        {
+          "source": "production-latest-progress",
+          "locator": "$.utc"
+        },
+        {
+          "source": "production-status-check",
+          "locator": "Lines 5–8, last snapshot and STOPPED/RESUME_REQUIRED"
+        },
+        {
+          "source": "controller-metadata",
+          "locator": "$.process.pid, $.process.creation_filetime"
+        },
+        {
+          "source": "controller-status-code",
+          "locator": "Lines 117–130, process identity comparison"
+        }
+      ],
+      "derivation": "The operator records the stop to the minute. The last progress snapshot converts to 17:25:23.703287 KST. Snapshot RUNNING is stored history; the controller check is based on current process identity."
+    },
+    {
+      "id": "production-stage-two",
+      "paper_values": {
+        "stage": 2,
+        "cumulative_analysis_seconds_per_root": 3600,
+        "visited": 1665,
+        "scheduled": 1665,
+        "completed_at_kst": "11:48:53"
+      },
+      "paper_locations": [
+        "Stage table"
+      ],
+      "sources": [
+        {
+          "source": "production-stage1",
+          "locator": "$.roots_open"
+        },
+        {
+          "source": "production-stage2",
+          "locator": "$.stage_done, $.budget_seconds, $.utc"
+        },
+        {
+          "source": "production-state",
+          "locator": "$.stages[1]"
+        }
+      ],
+      "derivation": "Distinct stage-two visits exactly match the open-root set at the end of stage one. UTC converted to KST at whole-second precision."
+    },
+    {
+      "id": "production-stage-three",
+      "paper_values": {
+        "stage": 3,
+        "cumulative_analysis_seconds_per_root": 14400,
+        "visited": 5,
+        "scheduled": 1324
+      },
+      "paper_locations": [
+        "Stage table",
+        "Recorded results (remote search policy)"
+      ],
+      "sources": [
+        {
+          "source": "production-latest-progress",
+          "locator": "$.stage, $.cumulative_analysis_budget_seconds, $.stage_roots_completed, $.stage_roots_total"
+        },
+        {
+          "source": "production-state",
+          "locator": "$.stage_index (zero-based), $.stages, $.stage_done, $.stage_total"
+        },
+        {
+          "source": "production-stage2",
+          "locator": "$.roots_open"
+        }
+      ],
+      "derivation": "Stage visits are different from closures, and the denominator denotes the stage-three queue at entry."
+    },
+    {
+      "id": "equal-shadow-limit",
+      "paper_values": {
+        "lambda_at_coincidence": 1,
+        "separation_margin_at_coincidence": 0
+      },
+      "paper_locations": [
+        "Why roots remained open"
+      ],
+      "sources": [
+        {
+          "source": "interim-paper",
+          "locator": "Lines 299–345, scale-one shadows and zero separation margin"
+        }
+      ]
+    },
+    {
+      "id": "frontier-coverage-no-split",
+      "paper_values": {
+        "pending_boxes_covered_percent": 89.86,
+        "additional_depth": 0
+      },
+      "paper_locations": [
+        "Methods retained"
+      ],
+      "sources": [
+        {
+          "source": "measurement-report",
+          "locator": "Line 46, 26,279 covered out of 29,243 pending boxes; no extra splitting"
+        }
+      ],
+      "derivation": "The percentage counts boxes in the sampled frontiers, rather than the volume of their union or the fraction of all production roots closed."
+    },
+    {
+      "id": "frontier-coverage-depth-four",
+      "paper_values": {
+        "depth": 4,
+        "fully_covered_roots": 16,
+        "sampled_roots": 48
+      },
+      "paper_locations": [
+        "Methods retained"
+      ],
+      "sources": [
+        {
+          "source": "measurement-report",
+          "locator": "Lines 38–49, depth-four search and whole-frontier counts"
+        }
+      ]
+    },
+    {
+      "id": "frontier-coverage-depth-ten",
+      "paper_values": {
+        "depth": 10,
+        "fully_covered_roots": 17,
+        "sampled_roots": 48
+      },
+      "paper_locations": [
+        "Methods retained"
+      ],
+      "sources": [
+        {
+          "source": "depth10-meeting",
+          "locator": "Lines 93–97 and 122–129, max-depth 10 invocation and initial results"
+        },
+        {
+          "source": "depth10-log",
+          "locator": "48 distinct event=\"refine_done\" rows, of which 17 have closed=true"
+        }
+      ],
+      "derivation": "Depth-ten refinement uses the same diagnostic sample; fully covering a pending frontier in this experiment does not update production."
+    },
+    {
+      "id": "remote-pilot-population",
+      "paper_values": {
+        "batches": 6,
+        "roots": 192
+      },
+      "paper_locations": [
+        "Recorded results"
+      ],
+      "sources": [
+        {
+          "source": "remote-batch-1-export",
+          "locator": "$.roots, $.seal_sha256"
+        },
+        {
+          "source": "remote-batch-1-closeout",
+          "locator": "$.indices, $.status, $.seal_sha256"
+        },
+        {
+          "source": "remote-batch-2-export",
+          "locator": "$.roots, $.seal_sha256"
+        },
+        {
+          "source": "remote-batch-2-closeout",
+          "locator": "$.indices, $.status, $.seal_sha256"
+        },
+        {
+          "source": "remote-batch-3-export",
+          "locator": "$.roots, $.seal_sha256"
+        },
+        {
+          "source": "remote-batch-3-closeout",
+          "locator": "$.indices, $.status, $.seal_sha256"
+        },
+        {
+          "source": "remote-batch-4-export",
+          "locator": "$.roots, $.seal_sha256"
+        },
+        {
+          "source": "remote-batch-4-closeout",
+          "locator": "$.indices, $.status, $.seal_sha256"
+        },
+        {
+          "source": "remote-batch-5-export",
+          "locator": "$.roots, $.seal_sha256"
+        },
+        {
+          "source": "remote-batch-5-closeout",
+          "locator": "$.indices, $.status, $.seal_sha256"
+        },
+        {
+          "source": "remote-batch-6-export",
+          "locator": "$.roots, $.seal_sha256"
+        },
+        {
+          "source": "remote-batch-6-closeout",
+          "locator": "$.indices, $.status, $.seal_sha256"
+        }
+      ],
+      "derivation": "Disjoint assigned root sets matched against all final server closeouts, and against their per-root result filenames and indices."
+    },
+    {
+      "id": "locally-accepted-remote-closures",
+      "paper_values": {
+        "local_exact_closures": 22
+      },
+      "paper_locations": [
+        "Abstract",
+        "Recorded results"
+      ],
+      "sources": [
+        {
+          "source": "remote-importer",
+          "locator": "fresh, verify_child and import_results: fresh local replay and separate registry"
+        },
+        {
+          "source": "local-closure-1711",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-1781",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-2800",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-2826",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-3045",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-3420",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-1128",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-1811",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-1280",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-1647",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-1683",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-2167",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-2566",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-575",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-2122",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-3250",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-2637",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-2661",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-2705",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-2818",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-3018",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        },
+        {
+          "source": "local-closure-3485",
+          "locator": "$.index, $.closed, $.status, $.full_exact_replay, $.fresh_process, $.rehearsal, $.closure_replay, $.seal_sha256"
+        }
+      ],
+      "derivation": "Counts distinct closed roots with final exact local PASS receipts, not open-root replays or reported server closures alone."
+    },
+    {
+      "id": "remote-closures-outside-production",
+      "paper_values": {
+        "local_exact_closures": 22,
+        "production_closures": 734
+      },
+      "paper_locations": [
+        "Abstract",
+        "Recorded results"
+      ],
+      "sources": [
+        {
+          "source": "production-latest-progress",
+          "locator": "$.closed_roots"
+        },
+        {
+          "source": "production-stage2",
+          "locator": "$.roots_open"
+        },
+        {
+          "source": "production-open-1711",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-1781",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-2800",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-2826",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-3045",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-3420",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-1128",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-1811",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-1280",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-1647",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-1683",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-2167",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-2566",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-575",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-2122",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-3250",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-2637",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-2661",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-2705",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-2818",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-3018",
+          "locator": "$.closed (=false)"
+        },
+        {
+          "source": "production-open-3485",
+          "locator": "$.closed (=false)"
+        }
+      ],
+      "derivation": "Every accepted remote root still has closed=false in its production result. The counts describe separate scopes and are not combined."
+    },
+    {
+      "id": "runtime-estimate",
+      "paper_values": {
+        "estimate_as_stated": "weeks to months"
+      },
+      "paper_locations": [
+        "Closure and resumption"
+      ],
+      "sources": [
+        {
+          "source": "instructions",
+          "locator": "Line 63, operator's reason and estimate"
+        },
+        {
+          "source": "production-latest-progress",
+          "locator": "$.stage_eta_seconds, $.rate_basis, $.stage_roots_completed"
+        }
+      ],
+      "derivation": "This is the operator's planning estimate, not a proof-completion forecast. The recorded stage ETA divides remaining visits by the observed elapsed-wall rate, which includes resumed downtime."
+    },
+    {
+      "id": "hash-algorithm",
+      "paper_values": {
+        "label": "SHA-256"
+      },
+      "paper_locations": [
+        "Data and code"
+      ],
+      "sources": [
+        {
+          "source": "instructions",
+          "locator": "Line 3, provenance requirement"
+        },
+        {
+          "source": "controller-status-code",
+          "locator": "Production controller source file, uses hashlib.sha256 for integrity checks"
+        }
+      ],
+      "derivation": "The numeric suffix names the digest algorithm. Evidence hashes in this file are over the source files' stored bytes."
+    },
+    {
+      "id": "preceding-paper",
+      "paper_values": {
+        "version": "v0.1",
+        "doi": "10.5281/zenodo.23725007"
+      },
+      "paper_locations": [
+        "References",
+        "Interim report hyperlinks"
+      ],
+      "sources": [
+        {
+          "source": "instructions",
+          "locator": "Line 64, earlier paper version DOI"
+        },
+        {
+          "source": "interim-metadata",
+          "locator": "Build guide, preprint DOI"
+        },
+        {
+          "source": "interim-dois",
+          "locator": "Line 9, preprint DOI at the interim release"
+        }
+      ]
+    },
+    {
+      "id": "preceding-software",
+      "paper_values": {
+        "version": "v0.1.0",
+        "doi": "10.5281/zenodo.23724948"
+      },
+      "paper_locations": [
+        "References"
+      ],
+      "sources": [
+        {
+          "source": "interim-citation",
+          "locator": "CFF version and doi fields"
+        },
+        {
+          "source": "interim-dois",
+          "locator": "Line 7, software version DOI"
+        }
+      ]
+    },
+    {
+      "id": "algorithmic-approach-reference",
+      "paper_values": {
+        "volume": 92,
+        "year": 2023,
+        "pages": "1905–1929",
+        "doi": "10.1090/mcom/3831"
+      },
+      "paper_locations": [
+        "References"
+      ],
+      "sources": [
+        {
+          "source": "closing-draft-bibliography",
+          "locator": "Lines 8–13, Steininger and Yurkevich, 'An algorithmic approach to Rupert's problem'"
+        }
+      ]
+    },
+    {
+      "id": "depth0-full-sweep",
+      "paper_values": {
+        "roots": 1271,
+        "pending_boxes": 977075,
+        "covered_boxes": 832921,
+        "covered_percent": 85.25,
+        "fully_covered_roots": 285
+      },
+      "paper_locations": [
+        "Methods retained"
+      ],
+      "sources": [
+        {
+          "source": "sweep89-results",
+          "locator": "kit89/p0/root_NNNNN.json: count of files (1,271), sums of pending and covered, count of fully_covered true; computed by Claude 2026-11-20"
+        },
+        {
+          "source": "sweep89-input-kit",
+          "locator": "input roots: second stage done, not closed, not active at kit assembly (2026-11-20 01:08 KST)"
+        }
+      ],
+      "note": "Remote measurement with the v3 WS and corner checkers at depth 0; not production closures."
+    }
+  ],
+  "remote_batches": [
+    {
+      "batch": 1,
+      "roots_processed": 32,
+      "local_exact_closures": [
+        1711,
+        1781,
+        2800,
+        2826,
+        3045,
+        3420
+      ]
+    },
+    {
+      "batch": 2,
+      "roots_processed": 32,
+      "local_exact_closures": [
+        1128,
+        1811
+      ]
+    },
+    {
+      "batch": 3,
+      "roots_processed": 32,
+      "local_exact_closures": [
+        1280,
+        1647,
+        1683,
+        2167,
+        2566
+      ]
+    },
+    {
+      "batch": 4,
+      "roots_processed": 32,
+      "local_exact_closures": [
+        575,
+        2122,
+        3250
+      ]
+    },
+    {
+      "batch": 5,
+      "roots_processed": 32,
+      "local_exact_closures": [
+        2637,
+        2661,
+        2705,
+        2818,
+        3018,
+        3485
+      ]
+    },
+    {
+      "batch": 6,
+      "roots_processed": 32,
+      "local_exact_closures": []
+    }
+  ],
+  "sources": {
+    "instructions": {
+      "path": "release73_closing/지시-마무리.md",
+      "sha256": "0d9f66aedd77a02ada14c4f1ba2c48664908cb745abe706975bbdd96d551f3fd"
+    },
+    "interim-paper": {
+      "path": "release73_interim/paper/paper.tex",
+      "sha256": "0b5c1f767faf73f9cfc9927322fbdf1bfd3b391a20fa86dc69c86ffb78570688"
+    },
+    "interim-metadata": {
+      "path": "release73_interim/paper/BUILD.md",
+      "sha256": "80003e2f88458e6b40ecdafa0cf6aeced5153087b451b1d2fa5626d569b0a025"
+    },
+    "interim-citation": {
+      "path": "release73_interim/upload/j73-rupert/CITATION.cff",
+      "sha256": "66b565a5433f8b153c00bb3f2ed48d85bb4389c758d9e6c2c8e15efbf012e478"
+    },
+    "interim-dois": {
+      "path": "release73_interim/보고-작업71.md",
+      "sha256": "19fbeea86487f88401f998fb083f6bb6381759b65f899156b68e84d9c2a46ba1"
+    },
+    "closing-draft-bibliography": {
+      "path": "release73_final/paper/references.tex",
+      "sha256": "8a1f59a8a031127cd49ce13f2bbb3860991e56ef1de50a81657ae405bd514e6c"
+    },
+    "production-latest-progress": {
+      "path": "논의/sol/q50speed/switched_production/progress.json",
+      "sha256": "4d2eb140cdb6ea0c831f9ff01f60d50a1db724ced0d5cad6e5e1b1d4074b674f",
+      "encoding": "gzip"
+    },
+    "production-state": {
+      "path": "논의/sol/q50speed/switched_production/state.json",
+      "sha256": "f75e40ac7e015aea13225d7206706e68b746f7ec73ade8b2d4ebcde8e6d24807",
+      "encoding": "gzip"
+    },
+    "production-stage1": {
+      "path": "논의/sol/q50speed/switched_production/stage_1.json",
+      "sha256": "136726790f3d295651b66e55f4cd220ce143785c0204053ffb7e26aaf0d56631",
+      "encoding": "gzip"
+    },
+    "production-stage2": {
+      "path": "논의/sol/q50speed/switched_production/stage_2.json",
+      "sha256": "7e3b8ede3e8bf845b7ceacb186425cf9f74956817189695d008af74feb7a7586",
+      "encoding": "gzip"
+    },
+    "controller-metadata": {
+      "path": "논의/sol/q50speed/switched_production/controller52.json",
+      "sha256": "0b49838904b4a9a94f19ec8931bb0ae8e024056f19415aedb3ad678e3d0f065b",
+      "encoding": "gzip"
+    },
+    "controller-status-code": {
+      "path": "논의/sol/q50speed/engine_controller50.py",
+      "sha256": "9a70318140fc26a47260b2545932d56953744f336e591b1e15b5f0e28f0f5811"
+    },
+    "production-status-check": {
+      "path": "release73_closing/production-status.txt",
+      "sha256": "c366f090ee56166f9f0851a1f08a80697be0b5787c3a9d6e8a091e16bdae9e1c"
+    },
+    "measurement-report": {
+      "path": "simplify73/measure82/보고-작업82.md",
+      "sha256": "52a5c3d7b9c5ea64406f0a333f03cf319036cf03477461d713c7dd870b298677"
+    },
+    "depth10-log": {
+      "path": "회의실/opus/deep10.log",
+      "sha256": "2241945f49523b1d73cc96f46d40d45653a2dd2c40c3f3fd9bb35b96961ca35f"
+    },
+    "depth10-meeting": {
+      "path": "회의실/게시판.md",
+      "sha256": "906b6f74e482ec8e4b6f286d4d3d9453b39d66f929d8770984323bc3811380ca"
+    },
+    "remote-importer": {
+      "path": "simplify73/server88/import88.py",
+      "sha256": "ed8a92bd98e6c77f4b9e348b7cd26f061dbbee218cf51e2c9c4a0516a685644a"
+    },
+    "remote-batch-1-export": {
+      "path": "simplify73/server88/stage3-batch01-ready-export88.json",
+      "sha256": "58d7eab0b1875d384daf286c93cc06f8061dad71c1760f66e117c5c3a07f6383"
+    },
+    "remote-batch-1-closeout": {
+      "path": "simplify73/server88/returns/2546e367548b4b1783ba87ae851c5987/results/closeout88.json",
+      "sha256": "ded0a1b137b34a72e93bfc6bb351346172f07125d2275c91980a1faa7a7a0f66"
+    },
+    "local-closure-1711": {
+      "path": "simplify73/server88/registry-batch01/01711.json",
+      "sha256": "1c311785a9a9721354d08e14e351a84aedd6acbf0a313ba5e3899308f5a3027a"
+    },
+    "production-open-1711": {
+      "path": "논의/sol/q50speed/switched_production/roots/01711/result.json",
+      "sha256": "1c79922a1918d87882ca0beb24d1735bdb10420625d766e8dce77334dab2e618",
+      "encoding": "gzip"
+    },
+    "local-closure-1781": {
+      "path": "simplify73/server88/registry-batch01/01781.json",
+      "sha256": "dbde4c68af6af2d934fdf0d5688f270197bfded0ce41c2b1eff3aee1b0ceddf4"
+    },
+    "production-open-1781": {
+      "path": "논의/sol/q50speed/switched_production/roots/01781/result.json",
+      "sha256": "f6671f2eafb717641ec15ca4ba9f40eb953984cb5377c807dc1ddcc0459c8055",
+      "encoding": "gzip"
+    },
+    "local-closure-2800": {
+      "path": "simplify73/server88/registry-batch01/02800.json",
+      "sha256": "0f3c6fa1757c4da545ce74ac97f6f92d1093c8c7e833b6ca272021e707e105e3"
+    },
+    "production-open-2800": {
+      "path": "논의/sol/q50speed/switched_production/roots/02800/result.json",
+      "sha256": "340ae375f68374c900b5da6fca5f3b24e53b6fc0bcd65062e250ce99671dcb24",
+      "encoding": "gzip"
+    },
+    "local-closure-2826": {
+      "path": "simplify73/server88/registry-batch01/02826.json",
+      "sha256": "1427ccec0cfefbbd80f30abdc1d1645fdc216d617b8942bf7ca6ce65f5f7763a"
+    },
+    "production-open-2826": {
+      "path": "논의/sol/q50speed/switched_production/roots/02826/result.json",
+      "sha256": "82d9894555a04ae8cf5caef6507f50ef804a0fc7c2f9a224ce76ef5b34a5036e",
+      "encoding": "gzip"
+    },
+    "local-closure-3045": {
+      "path": "simplify73/server88/registry-batch01/03045.json",
+      "sha256": "94745636c543eb7ea423c3f51d9e3d869b90cd856f720d68de69be39546f59d6"
+    },
+    "production-open-3045": {
+      "path": "논의/sol/q50speed/switched_production/roots/03045/result.json",
+      "sha256": "247409497e7ae9175bfcdd9b5ce3f07aeed5d19bedb609e0c1ad9efda235276c",
+      "encoding": "gzip"
+    },
+    "local-closure-3420": {
+      "path": "simplify73/server88/registry-batch01/03420.json",
+      "sha256": "8be6302b5d89fa8f679e68ce8296bb7f8fbcd03418cc5d789c903284c97d5db6"
+    },
+    "production-open-3420": {
+      "path": "논의/sol/q50speed/switched_production/roots/03420/result.json",
+      "sha256": "c179299cf67d21e5e1a338ed4c54c450cd2122f6a9805e47cd54d14473c37aeb",
+      "encoding": "gzip"
+    },
+    "remote-batch-2-export": {
+      "path": "simplify73/server88/stage3-batch02-export88.json",
+      "sha256": "07e5bcb96536eae577f9352598e5ca5d144ac1002e97e98642d2e46959deb791"
+    },
+    "remote-batch-2-closeout": {
+      "path": "simplify73/server88/returns/02017175080e4aa886888fac93b4954c/results/closeout88.json",
+      "sha256": "af791362cc5a73cf2fbc9727d98c6dcdcc3e9382dcdc71ab93932bfe365debe6"
+    },
+    "local-closure-1128": {
+      "path": "simplify73/server88/registry-batch02/01128.json",
+      "sha256": "93c89119e2fb807be37962239280dd84851233ec49077aaca6ff14160cc8bf1c"
+    },
+    "production-open-1128": {
+      "path": "논의/sol/q50speed/switched_production/roots/01128/result.json",
+      "sha256": "72718c3ab58fbfc28a4315d84f55bdcd76917db05c67a644293ebf590fdfd9ed",
+      "encoding": "gzip"
+    },
+    "local-closure-1811": {
+      "path": "simplify73/server88/registry-batch02/01811.json",
+      "sha256": "e1f583c5ba4555e67e6270e685839c2509586d3a7de68bf45d348a54e4d552df"
+    },
+    "production-open-1811": {
+      "path": "논의/sol/q50speed/switched_production/roots/01811/result.json",
+      "sha256": "1a072b51ae5be0114207eb2e9c4bb8e997a1a933180e5f33de442307e541ee21",
+      "encoding": "gzip"
+    },
+    "remote-batch-3-export": {
+      "path": "simplify73/server88/stage3-batch03-export88.json",
+      "sha256": "acae008f19795298588ec0e7509daf6bf9cd91b4e80b100c29e7485929612e17"
+    },
+    "remote-batch-3-closeout": {
+      "path": "simplify73/server88/returns/ad89e5683e954b449515dff78ce06339/results/closeout88.json",
+      "sha256": "e773377da11543c27d4de9674bab11cd72a6b9e19a86c322dc6e93fe05e9997b"
+    },
+    "local-closure-1280": {
+      "path": "simplify73/server88/registry-batch03/01280.json",
+      "sha256": "c662e4eea1403449ee1d9bffa48e8356e9b167ede94b620254660111690cbb57"
+    },
+    "production-open-1280": {
+      "path": "논의/sol/q50speed/switched_production/roots/01280/result.json",
+      "sha256": "12d7bd6ae50b3cc4001043ec2b10a3c06e86bbcc7fee2eea076167f75c8fc901",
+      "encoding": "gzip"
+    },
+    "local-closure-1647": {
+      "path": "simplify73/server88/registry-batch03/01647.json",
+      "sha256": "6e70cd81ec60cdbc80f34de0b568cce2796015620ef164cbf9a884386e56a9c4"
+    },
+    "production-open-1647": {
+      "path": "논의/sol/q50speed/switched_production/roots/01647/result.json",
+      "sha256": "9140de266bf3f74bbef77cf9c73c6692363173c7fcaa95d95915e0899a16fb2e",
+      "encoding": "gzip"
+    },
+    "local-closure-1683": {
+      "path": "simplify73/server88/registry-batch03/01683.json",
+      "sha256": "7555d85b3a7223116a91930f9cea819db7442d2277901e370d295d415f769eda"
+    },
+    "production-open-1683": {
+      "path": "논의/sol/q50speed/switched_production/roots/01683/result.json",
+      "sha256": "4e860917b2d4241288e697c2fc92049823bcb146bda73effaacd03ad1706a3cc",
+      "encoding": "gzip"
+    },
+    "local-closure-2167": {
+      "path": "simplify73/server88/registry-batch03/02167.json",
+      "sha256": "42851fae7fe267a6513a341b872b0af165f3262384d333e055347b1e72ac27e1"
+    },
+    "production-open-2167": {
+      "path": "논의/sol/q50speed/switched_production/roots/02167/result.json",
+      "sha256": "dd19738184beb4c902d905ea687ff7474ed394177fe6f09d797603c7241a4e7b",
+      "encoding": "gzip"
+    },
+    "local-closure-2566": {
+      "path": "simplify73/server88/registry-batch03/02566.json",
+      "sha256": "1a3ca005b47b8f40d83a3fbd8b6ae997dbb988727d1aa5fc3bb300fc396b9c07"
+    },
+    "production-open-2566": {
+      "path": "논의/sol/q50speed/switched_production/roots/02566/result.json",
+      "sha256": "f3b2c1316016366fd12f00949aa5b6e13a4e0cceb1d0fde43a586fef08000d3b",
+      "encoding": "gzip"
+    },
+    "remote-batch-4-export": {
+      "path": "simplify73/server88/stage3-batch04-export88.json",
+      "sha256": "472c3bf8fe2a35d970553e2bc2a6a49cfb1499ece2c0b52ca5a4060e66d0f954"
+    },
+    "remote-batch-4-closeout": {
+      "path": "simplify73/server88/returns/9896db7abd6e46ea9e9530ab9c1cf9e9/results/closeout88.json",
+      "sha256": "db6e2afd63fa0222557a8a39a9648a1a39eceda1f2a56bc6188d4429bcb19e5a"
+    },
+    "local-closure-575": {
+      "path": "simplify73/server88/registry-batch04/00575.json",
+      "sha256": "14029d06f418da12ecb64bd8e6d62444c28a95420423439813c209a7c02e3a91"
+    },
+    "production-open-575": {
+      "path": "논의/sol/q50speed/switched_production/roots/00575/result.json",
+      "sha256": "e8d050f6058037bcf1ed720480b099e0ee86967e5ba8de2479a4ac0a21ae7518",
+      "encoding": "gzip"
+    },
+    "local-closure-2122": {
+      "path": "simplify73/server88/registry-batch04/02122.json",
+      "sha256": "f84b924d619203dd78e858a3abcdd297f0a367d240f83d77f6c6ab6a3008580a"
+    },
+    "production-open-2122": {
+      "path": "논의/sol/q50speed/switched_production/roots/02122/result.json",
+      "sha256": "257e0940158ae2c55a13a7b90be5bb1e7e586bc9e249b9f3efdc4f66036bc0b9",
+      "encoding": "gzip"
+    },
+    "local-closure-3250": {
+      "path": "simplify73/server88/registry-batch04/03250.json",
+      "sha256": "4a8a87d9ffb88f842ff3dc134b708bd6ed4795a6f29720d8f252d2453a180540"
+    },
+    "production-open-3250": {
+      "path": "논의/sol/q50speed/switched_production/roots/03250/result.json",
+      "sha256": "d0b71e46ef6022fab57c1e4f7aa070313eebb892f93b563d8229a9df848d2fa7",
+      "encoding": "gzip"
+    },
+    "remote-batch-5-export": {
+      "path": "simplify73/server88/stage3-batch05-export88.json",
+      "sha256": "fe9720158446de7eab8936e4c87d9655dc4184034d525d9c2de4b60fbb85d7d0"
+    },
+    "remote-batch-5-closeout": {
+      "path": "simplify73/server88/returns/68a1b3919200492e9c47d44a649a8416/results/closeout88.json",
+      "sha256": "9bd0a968a37a9b3b5ad3397e0372b3ee8f6e50798007fe8f5a2739aac39a2b3c"
+    },
+    "local-closure-2637": {
+      "path": "simplify73/server88/registry-batch05/02637.json",
+      "sha256": "ba94033c62b360bd5f9fac61991db00b7fece6b3a0b26e20351dc681d8395cb0"
+    },
+    "production-open-2637": {
+      "path": "논의/sol/q50speed/switched_production/roots/02637/result.json",
+      "sha256": "b2ff406a4d813fe67099c643e367476a59b6d3e9ed3c14a16ebd087514ce251e",
+      "encoding": "gzip"
+    },
+    "local-closure-2661": {
+      "path": "simplify73/server88/registry-batch05/02661.json",
+      "sha256": "fa88e40934c1abf065bce35cee6d5bfe612feb8a269677edc88d8eba5988e10d"
+    },
+    "production-open-2661": {
+      "path": "논의/sol/q50speed/switched_production/roots/02661/result.json",
+      "sha256": "2fdfbfed7c9a920e69c7d50398f8f57131710b040c87980c6f033905b38ed860",
+      "encoding": "gzip"
+    },
+    "local-closure-2705": {
+      "path": "simplify73/server88/registry-batch05/02705.json",
+      "sha256": "3368cb50b798fdbd22d712ac4323e8aca19c5e966aa91cb0def4ed13d4a75bfc"
+    },
+    "production-open-2705": {
+      "path": "논의/sol/q50speed/switched_production/roots/02705/result.json",
+      "sha256": "134b504766a8f3d0a2136598825beccbd09739460e3d33679c7d13b29105f919",
+      "encoding": "gzip"
+    },
+    "local-closure-2818": {
+      "path": "simplify73/server88/registry-batch05/02818.json",
+      "sha256": "ee84859ea6063fa1cc58a7b63b036afe496b02e41e43ba0a8acd9e0371235a28"
+    },
+    "production-open-2818": {
+      "path": "논의/sol/q50speed/switched_production/roots/02818/result.json",
+      "sha256": "e8b2848369485c72430d1e6cb70ca48b578a8e3f89f6441a63df01a0feed8dbd",
+      "encoding": "gzip"
+    },
+    "local-closure-3018": {
+      "path": "simplify73/server88/registry-batch05/03018.json",
+      "sha256": "1ec3856e598bf1e3e0ab470ff753883bd97bf03edf729a07a9202c20bff9b20a"
+    },
+    "production-open-3018": {
+      "path": "논의/sol/q50speed/switched_production/roots/03018/result.json",
+      "sha256": "65cd4e19f14dc545dfb282c434c24420d5131165de3a8f63929b5fcda0b7d876",
+      "encoding": "gzip"
+    },
+    "local-closure-3485": {
+      "path": "simplify73/server88/registry-batch05/03485.json",
+      "sha256": "f5adb2527b0e9b69d78f1fa330ad5e4794503cf6950dc605e653c8916d77c527"
+    },
+    "production-open-3485": {
+      "path": "논의/sol/q50speed/switched_production/roots/03485/result.json",
+      "sha256": "28d90eb852adbe07ad0ad7f70ef3527d06a0742cfbe209f8defecec6512d643a",
+      "encoding": "gzip"
+    },
+    "remote-batch-6-export": {
+      "path": "simplify73/server88/stage3-batch06-export88.json",
+      "sha256": "5fad56337270a90af5577d1d2024f449e3b0b97ec78e98797e7f3125cf2c595b"
+    },
+    "remote-batch-6-closeout": {
+      "path": "simplify73/server88/returns/58a927c738244f6c84664e75ed41be79/results/closeout88.json",
+      "sha256": "31463f58416fea55ea7c105777c39586343429d5274293ecdeaf6d0c0ad875f4"
+    },
+    "sweep89-results": {
+      "path": "회의실/sweep89/return/sweep89-results.tar.gz",
+      "sha256": "7f94c46290ff2337dab352114c67f3957e04de429bffe16095c5a4083ba75349"
+    },
+    "sweep89-input-kit": {
+      "path": "회의실/sweep89/sweep89-kit.tar.gz",
+      "sha256": "9a91c3e20092b14d06d42322a13353a331f5c805ce1199df0b54bbc96372b5aa"
+    }
+  }
+}

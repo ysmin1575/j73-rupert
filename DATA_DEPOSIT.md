@@ -1,12 +1,10 @@
 # Proposed separate deposit of staged closed-root data
 
-The GitHub interim package includes three disclosed local certificates
-and every tube region collected for this release. It does not include
-the complete certificate forests for the closed staged roots. The full
-closed-root certificates (about 560 MB of observed producer files) are not
-deposited in this interim version; they will accompany the final version.
-No deposit date is promised. No separate Zenodo data record has been
-created during preparation.
+The interim package includes three disclosed local certificates and every
+tube region collected for that release. The closing report carries these
+materials forward. A separate deposit of the complete certificate forests
+for the closed staged roots remains a proposal. The inventory below records
+the physical files observed during the interim capture.
 
 ## Exact observed source-file inventory
 

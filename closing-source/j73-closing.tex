@@ -1,0 +1,183 @@
+% Copyright Sumin Yoo. Paper text: CC BY 4.0.
+\documentclass[11pt,a4paper]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hmargin=27mm,vmargin=20mm]{geometry}
+\usepackage{amsmath,booktabs,graphicx}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\papertitle}{The Rupert Problem for the Johnson Solid J73: Closing Report}
+\newcommand{\releaseversion}{v0.2}
+\newcommand{\releasedate}{November 2026}
+\newcommand{\interimpaper}{\href{https://doi.org/10.5281/zenodo.23725007}{interim report}}
+\newcommand{\numbersledger}{\href{https://github.com/ysmin1575/j73-rupert/blob/v0.2.0/paper/numbers.json}{\texttt{paper/numbers.json}}}
+\hypersetup{
+  pdftitle={\papertitle},
+  pdfauthor={Yoo, Sumin},
+  pdfsubject={Closing report, version \releaseversion}
+}
+\setlength{\emergencystretch}{1em}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.48em}
+
+\begin{document}
+\raggedbottom
+\pagestyle{empty}
+\thispagestyle{empty}
+\begin{center}
+  \scalebox{1.22}{\bfseries The Rupert Problem for the Johnson Solid J73:}\par
+  \scalebox{1.22}{\bfseries Closing Report}\par
+  \vspace{0.55em}
+  Yoo, Sumin\par
+  {\small Version 0.2\quad / \quad \releasedate\par}
+\end{center}
+\begin{quote}
+\small\textsc{Abstract.}
+This closing report records the state of the attempt to rule out Rupert's
+property for the parabigyrate rhombicosidodecahedron (Johnson solid J73).
+When production stopped, the run had recorded 734 of its 2,057 staged
+roots as closed. The other 1,323 remained open. In a separate pilot,
+local replay verified closures for 22 roots still listed as open in
+production. The report
+describes the difficulty of certifying exclusion near coincident
+projections and summarizes the local methods tested there. The full
+exclusion cover remains incomplete, and the Rupert question for J73
+remains open.
+\end{quote}
+
+\section*{What a complete proof would require}
+
+A solid has Rupert's property if a congruent copy can pass through a
+straight tunnel in it with positive clearance. For a convex solid, the
+equivalent planar test uses orthographic projections of two independently
+oriented copies onto a common plane. One projection must fit strictly
+inside the other after translation, as described by
+\href{https://doi.org/10.1090/mcom/3831}{Steininger and Yurkevich}.
+Central symmetry allows the shadows of J73 to be centered for this
+test. The \interimpaper{} gives the exact geometry, the symmetry
+reduction and the local exclusion theorems.
+
+The computation starts with a finite collection of closed boxes, called
+\emph{roots}, that cover the reduced configuration space. A root can be
+excluded by a rule valid on the entire box or by verified rules on
+subboxes whose union covers it. A complete proof of exclusion needs a
+complete cover and exact replay of the retained certificate chain from
+every original root. The results below document progress toward that
+criterion.
+
+\section*{Recorded results}
+
+The production run stopped on 20 November 2026 at 17:25 Korea Standard
+Time (KST), with 734 of 2,057 roots recorded as closed and 1,323 remaining
+open. These totals are for the queue carried forward from earlier
+passes through the original grid. End-to-end independent replay of
+the production chain remains unfinished.
+
+\begin{center}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+Stage & Cumulative budget per root & Visits & Status on 20 November (KST) \\
+\midrule
+Second & 3,600 analysis seconds & 1,665 of 1,665 & Completed at 11:48:53 \\
+Third & 14,400 analysis seconds & 5 of 1,324 & Stopped at 17:25 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The visit counts track each stage's own queue, including visits that
+left a root open. The separate remote pilot ran the third-stage search
+on 192 roots in six batches. Local exact replay accepted 22 of the
+closures returned by the pilot. The importer matched each result to its
+assignment and reran the local checker before accepting it. The 22
+accepted imports are outside the 734 production closures.
+
+\section*{Exclusion near coincident projections}
+
+For fixed orientations, let $\lambda$ be the supremum of the scale
+factors for which the inner projection fits strictly inside the outer
+projection. When the projections coincide, $\lambda$ equals one and
+their boundaries coincide.
+Coincidences occur at identical orientations, at orientations related
+by symmetries of J73, and at the distinct orientations described in
+the \interimpaper. Splitting can help away from coincidence. A box
+still containing such a pose requires a local argument that allows
+a zero gap.
+
+\newpage
+\section*{Methods retained}
+
+\textbf{Weighted support (WS).} Choose pairs of outer vertices whose
+projected chord lies on a supporting line throughout the box. Form a
+nonnegative weighted sum of the signed gaps before bounding its
+derivatives, so that cancellations between the gaps are kept. A certified positive lower bound for that
+combination excludes strict containment throughout the box.
+
+\textbf{Corner mixed barrier and tubes.} Near a corner where
+equal-shadow families meet, the corner estimate combines support
+witnesses to give a nonnegative gap, with equality along the coincidence
+branches. The tube estimates likewise use transverse bounds in local
+coordinates to cover neighborhoods of known coincidence families.
+Applying either estimate requires a verified enclosure of the entire
+box in the region where the estimate holds.
+
+In a sample of 48 roots taken from copied pending frontiers, the WS
+and corner tests covered 89.86\% of pending boxes without extra
+splitting. Allowing extra splits to depth~4 covered every pending box
+in 16 of the 48 roots, and depth~10 raised that count to 17. A later
+sweep tested every pending box in the 1,271 roots that had completed
+stage two and were still open when the input was collected. Without
+further subdivision, the version~3 corner and weighted-support checks
+covered 832,921 of 977,075 boxes (85.25\%). They covered every pending
+box in 285 roots. The sweep did not change the production count.
+Covering the pending boxes checks only the unfinished part of a staged
+root. A proof for an original grid root must also verify the earlier
+certificates and each link between stages.
+
+\textbf{Stage budgets and local replay.} Each stage revisits the
+remaining roots with a larger cumulative time budget.
+Remote search can propose certificates. Local exact replay decides
+whether the returned evidence certifies the assigned region.
+
+\section*{Closure and resumption}
+
+The author stopped the project to pursue other work, expecting further
+searches to take weeks to months. The time needed for a complete proof
+is unknown. The calculation
+state and replay tools were retained. To resume, run a full preflight
+check against the retained state, continue the unresolved search and
+bind any adopted remote certificates to the production proof chain.
+The remaining requirement is a complete and independently checked
+cover of the original roots.
+
+\section*{Data and code}
+
+The accompanying \numbersledger{} lists the source files for the
+reported figures and their SHA-256 digests. The production records and
+sweep outputs are held in the author's project archive and are not part
+of the public package. The public package includes the version~2
+checker and the examples from the \interimpaper.
+Code and interim data:\newline \url{https://github.com/ysmin1575/j73-rupert}
+
+\section*{AI-use statement}
+
+Claude (Anthropic) and OpenAI Codex assisted with research, code and
+drafting. The author directed the project and takes responsibility for
+the submitted text.
+
+\section*{References}
+
+Steininger, J. and Yurkevich, S. \emph{An algorithmic approach to
+Rupert's problem}. Math. Comp. 92 (2023), 1905--1929.
+\href{https://doi.org/10.1090/mcom/3831}{DOI 10.1090/mcom/3831}.
+
+Yoo, Sumin. \emph{Towards a computer-assisted exclusion of Rupert's
+property for the parabigyrate rhombicosidodecahedron}.
+Interim report, v0.1. \href{https://doi.org/10.5281/zenodo.23725007}{DOI 10.5281/zenodo.23725007}.
+
+Yoo, Sumin. \emph{Towards a computer-assisted exclusion of Rupert's
+property for the parabigyrate rhombicosidodecahedron: interim
+verification package}, v0.1.0.
+\href{https://doi.org/10.5281/zenodo.23724948}{DOI 10.5281/zenodo.23724948}.
+
+\end{document}
